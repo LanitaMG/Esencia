@@ -1,0 +1,11 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo, .slogan {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.encabezado {
+    background-color: #EFCAAC;
+}
