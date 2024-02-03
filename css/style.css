@@ -9,3 +9,7 @@ body {
 .encabezado {
     background-color: #EFCAAC;
 }
+
+.carousel-item {
+    width: 400px;
+}
