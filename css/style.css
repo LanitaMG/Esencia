@@ -37,3 +37,14 @@ body {
     --bs-btn-disabled-border-color: #eee;
 
 }
+
+.arboleda {
+    height: 10em;
+    background-image: url(../assets/arboles.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.pie {
+    background-color: #EFCAAC;
+}
