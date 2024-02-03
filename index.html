@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Esencia</title>
 </head>
+
 <body>
     <!-- Encabezado -->
     <header class="encabezado">
@@ -64,10 +66,48 @@
         </nav>
     </header>
 
+    <main class="container d-flex flex-column align-items-center py-5 text-center">
+        <!-- Logo - Presentación -->
+        <h1 class="logo display-4">ESENCIA</h1>
+        <p class="slogan text-secondary fs-5">Arte con alma de bosque</p>
+        <div class="wrapper d-flex justify-content-center align-items-center">
+            <!-- Carousel de imágenes - visible en md -->
+            <div id="carouselExampleAutoplaying" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/animal_02.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/auto_03.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/plato_02.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Carpincho - visible en sm -->
+            <img src="./assets/carpincho2.png" alt="" class="d-block d-md-none img-fluid">
+        </div>
+        <p class="p-3">Transformamos piezas descartadas en objetos únicos y hermosos.
+        ¡Disfruta de estas obras de arte sostenibles!</p>
+    </main>
 
-<!-- scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
