@@ -1,179 +1,273 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Esencia</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Encabezado -->
     <header class="encabezado">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid position-relative">
-                <!-- Encabezado - Logo + Slogan -->
-                <a class="navbar-brand align-self-center text-center" href="index.html">
-                    <span class="logo fs-3">ESENCIA</span>
-                    <p class="slogan fs-6 m-0 text-secondary">Alma de bosque</p>
-                </a>
-                <!-- Carpincho - Visible solo en md -->
-                <img class="d-none d-md-block position-absolute top-50 start-50 translate-middle" src="./assets/carpincho2.png" alt="Carpincho de madera" width="100px">
-                <!-- Encabezado - Menú -->
-                <div class="align-self-center">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Artistas
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="./pages/luciagomez.html">Lucía Gómez</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="./pages/cuchilepratte.html">Cuchi Lepratte</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="./pages/pedrofernandez.html">Pedro Fernández</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid position-relative">
+          <!-- Encabezado - Logo + Slogan -->
+          <a
+            class="navbar-brand align-self-center text-center"
+            href="index.html"
+          >
+            <span class="logo fs-3">ESENCIA</span>
+            <p class="slogan fs-6 m-0 text-secondary">Alma de bosque</p>
+          </a>
+          <!-- Carpincho - Visible solo en md -->
+          <img
+            class="d-none d-md-block position-absolute top-50 start-50 translate-middle"
+            src="./assets/carpincho2.png"
+            alt="Carpincho de madera"
+            width="100px"
+          />
+          <!-- Encabezado - Menú -->
+          <div class="align-self-center">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Artistas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./pages/luciagomez.html"
+                        >Lucía Gómez</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/cuchilepratte.html"
+                        >Cuchi Lepratte</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/pedrofernandez.html"
+                        >Pedro Fernández</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="container-fluid d-flex flex-column align-items-center py-3 text-center fondoRamas">
-        <!-- Logo - Presentación -->
-        <h1 class="logo display-4 bg-white rounded-pill p-3"> ESENCIA </h1>
-        <p class="slogan text-secondary fs-5">Obras de arte con alma de bosque</p>
-        <div class="wrapper d-flex justify-content-center align-items-center">
-            <!-- Carousel de imágenes - visible en md -->
-            <div id="carouselObras" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/animal_02.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/auto_03.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/plato_02.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselObras"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselObras"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+    <main
+      class="container-fluid d-flex flex-column align-items-center py-3 text-center fondoRamas"
+    >
+      <!-- Logo - Presentación -->
+      <h1 class="logo display-4 bg-white rounded-pill p-3">ESENCIA</h1>
+      <p class="slogan text-secondary fs-5">Obras de arte con alma de bosque</p>
+      <div class="wrapper d-flex justify-content-center align-items-center">
+        <!-- Carousel de imágenes - visible en md -->
+        <div
+          id="carouselObras"
+          class="carousel slide d-none d-md-block"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/animal_02.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-            <!-- Carpincho - visible en sm -->
-            <img src="./assets/carpincho2.png" alt="" class="d-block d-md-none img-fluid">
+            <div class="carousel-item">
+              <img src="./assets/auto_03.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/plato_02.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselObras"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselObras"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-        <p class="p-3">Transformamos piezas descartadas en objetos únicos y hermosos.
-            ¡Disfruta de estas obras de arte sostenibles!</p>
+        <!-- Carpincho - visible en sm -->
+        <img
+          src="./assets/carpincho2.png"
+          alt=""
+          class="d-block d-md-none img-fluid"
+        />
+      </div>
+      <p class="p-3">
+        Transformamos piezas descartadas en objetos únicos y hermosos. ¡Disfruta
+        de estas obras de arte sostenibles!
+      </p>
     </main>
-
 
     <!-- Nuestros Artistas -->
     <section>
-        <article class="nuestrosArtistas container-fluid p-5">
-            <div class="container text-center">
-                <h2 class="p-5 display-5">Nuestros artistas</h2>
-                <div class="row px-5 g-5">
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border-0">
-                            <img src="./assets/artistaLuciaGomez.png" class="card-img-top rounded-top-pill border border-3 border-light-subtle" alt="Retrato de la artista Lucía Gómez" />
-                            <div class="card-body bg-light bg-opacity-50 border border-light">
-                                <h5 class="card-title pb-3">Lucía Gómez</h5>
-                                <a href="./pages/luciagomez.html" class="btn btn-primary">Obras</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border-0">
-                            <img src="./assets/artistaCuchiLepratte.png" class="card-img-top rounded-top-pill border border-3 border-light-subtle" alt="Retrato de la artista Cuchi Lepratte" />
-                            <div class="card-body bg-light bg-opacity-50 border border-light">
-                                <h5 class="card-title pb-3">Cuchi Lepratte</h5>
-                                <a href="./pages/cuchilepratte.html" class="btn btn-primary">Obras</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border-0">
-                            <img src="./assets/artistaPedroFernandez.png" class="card-img-top rounded-top-pill border border-3 border-light-subtle" alt="Retrato de Pedro Fernández" />
-                            <div class="card-body bg-light bg-opacity-50 border border-light">
-                                <h5 class="card-title pb-3">Pedro Fernández</h5>
-                                <a href="./pages/pedrofernandez.html " class="btn btn-primary">Obras</a>
-                            </div>
-                        </div>
-                    </div>
+      <article class="nuestrosArtistas container-fluid p-5">
+        <div class="container text-center">
+          <h2 class="p-5 display-5">Nuestros artistas</h2>
+          <div class="row px-5 g-5">
+            <div class="col-md-4">
+              <div class="card bg-transparent border-0">
+                <img
+                  src="./assets/artistaLuciaGomez.png"
+                  class="card-img-top rounded-top-pill border border-3 border-light-subtle"
+                  alt="Retrato de la artista Lucía Gómez"
+                />
+                <div
+                  class="card-body bg-light bg-opacity-50 border border-light"
+                >
+                  <h5 class="card-title pb-3">Lucía Gómez</h5>
+                  <a href="./pages/luciagomez.html" class="btn btn-primary"
+                    >Obras</a
+                  >
                 </div>
+              </div>
             </div>
-        </article>
+            <div class="col-md-4">
+              <div class="card bg-transparent border-0">
+                <img
+                  src="./assets/artistaCuchiLepratte.png"
+                  class="card-img-top rounded-top-pill border border-3 border-light-subtle"
+                  alt="Retrato de la artista Cuchi Lepratte"
+                />
+                <div
+                  class="card-body bg-light bg-opacity-50 border border-light"
+                >
+                  <h5 class="card-title pb-3">Cuchi Lepratte</h5>
+                  <a href="./pages/cuchilepratte.html" class="btn btn-primary"
+                    >Obras</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-transparent border-0">
+                <img
+                  src="./assets/artistaPedroFernandez.png"
+                  class="card-img-top rounded-top-pill border border-3 border-light-subtle"
+                  alt="Retrato de Pedro Fernández"
+                />
+                <div
+                  class="card-body bg-light bg-opacity-50 border border-light"
+                >
+                  <h5 class="card-title pb-3">Pedro Fernández</h5>
+                  <a href="./pages/pedrofernandez.html " class="btn btn-primary"
+                    >Obras</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section class="container p-5 text-center">
-        <h2>Nuestra esencia</h2>
-        <p>
-            Creemos que la madera es un material noble y vivo, que nos conecta con
-            nuestras raíces y con el niño que llevamos dentro. Por eso, cuidamos
-            cada detalle de nuestro proceso de producción, desde la selección de la
-            madera hasta el acabado final, utilizando técnicas tradicionales y
-            ecológicas.
-        </p>
-        <p>
-            Nuestro objetivo es ofrecer productos de calidad, hechos a mano y con
-            amor, que puedan acompañarte durante mucho tiempo y que te hagan sentir
-            la magia de la madera.
-        </p>
+      <h2>Nuestra esencia</h2>
+      <p>
+        Creemos que la madera es un material noble y vivo, que nos conecta con
+        nuestras raíces y con el niño que llevamos dentro. Por eso, cuidamos
+        cada detalle de nuestro proceso de producción, desde la selección de la
+        madera hasta el acabado final, utilizando técnicas tradicionales y
+        ecológicas.
+      </p>
+      <p>
+        Nuestro objetivo es ofrecer productos de calidad, hechos a mano y con
+        amor, que puedan acompañarte durante mucho tiempo y que te hagan sentir
+        la magia de la madera.
+      </p>
     </section>
 
     <footer class="pie">
-        <div class="arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
-        <div class="container-fluid text-center pt-3">
-            <a class="text-decoration-none text-muted" href="index.html">
-                <span class="logo fs-3"> ESENCIA </span>
-                <p class="slogan fs-6">Alma de bosque</p>
-            </a>
-            <p class="small pb-3 m-0">
-                Las imágenes y los textos que ves en este sitio web fueron generados mediante IA
-            </p>
-        </div>
+      <div class="arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
+      <div class="container-fluid text-center pt-3">
+        <a class="text-decoration-none text-muted" href="index.html">
+          <span class="logo fs-3"> ESENCIA </span>
+          <p class="slogan fs-6">Alma de bosque</p>
+        </a>
+        <p class="small pb-3 m-0">
+          Las imágenes y los textos que ves en este sitio web fueron generados
+          mediante IA
+        </p>
+      </div>
     </footer>
 
     <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
