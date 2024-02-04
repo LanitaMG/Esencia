@@ -11,9 +11,14 @@ body {
     background-color: #EFCAAC;
 }
 
+.fondoRamas {
+    background-image: url(../assets/fondoRamas.png);
+    background-size:cover;
+    background-position: bottom;
+}
 
 .nuestrosArtistas {
-    background-image: url(../assets/vetasMain.png);
+    background-image: url(../assets/fondoMadera.jpg);
     background-size: cover;
 }
 
@@ -49,7 +54,7 @@ body {
 
 
 .hojas {
-    background-image: url(../assets/hojas.png);
+    background-image: url(../assets/fondoHojas.png);
     background-size: cover;
 }
 
