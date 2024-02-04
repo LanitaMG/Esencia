@@ -1,20 +1,22 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #fcfcfc;
-    
 }
+
+.logo, .slogan, h1, h2, h5 {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.encabezado, .pie {
+    background-color: #EFCAAC;
+}
+
 
 .nuestrosArtistas {
     background-image: url(../assets/vetasMain.png);
     background-size: cover;
 }
-.logo, .slogan, h1, h2, h5 {
-    font-family: "Montserrat Alternates", sans-serif;
-}
 
-.encabezado {
-    background-color: #EFCAAC;
-}
 
 .carousel-item {
     width: 400px;
@@ -45,6 +47,16 @@ body {
     background-size: contain;
 }
 
-.pie {
-    background-color: #EFCAAC;
+
+.hojas {
+    background-image: url(../assets/hojas.png);
+    background-size: cover;
+}
+
+.retrato {
+    max-height: 60vh;
+}
+
+.mini-retrato {
+    max-height: 20vh;
 }
