@@ -1,67 +1,207 @@
+@charset "UTF-8";
+/* Variables */
+/* Colores */
+/* Fuentes */
+/* fin variables */
+/* REset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #fcfcfc;
+  font-family: Montserrat, sans-serif;
+  background-color: #fcfcfc;
 }
 
-.logo, .slogan, h1, h2, h5 {
-    font-family: "Montserrat Alternates", sans-serif;
+a {
+  text-decoration: none;
+  color: #1d1d1d;
 }
 
-.encabezado, .pie {
-    background-color: #EFCAAC;
+li {
+  list-style-type: none;
 }
 
-.fondoRamas {
-    background-image: url(../assets/fondoRamas.png);
-    background-size:cover;
-    background-position: bottom;
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2em;
+  padding: 16px;
+  font-weight: normal;
 }
 
-.nuestrosArtistas {
-    background-image: url(../assets/fondoMadera.jpg);
-    background-size: cover;
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5em;
+  padding: 16px;
+  font-weight: normal;
 }
 
-
-.carousel-item {
-    width: 400px;
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.2em;
+  padding: 8px;
+  font-weight: normal;
 }
 
-.btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #B7C8C2;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-border-color: #B7C8C2;
-    --bs-btn-hover-bg: #BFC1CD;
-    --bs-btn-hover-border-color: #BFC1CD;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #B7C8C2;
-    --bs-btn-active-border-color: #B7C8C2;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #eee;
-    --bs-btn-disabled-border-color: #eee;
-
+/* fin Reset */
+/* Header - Menú */
+.index-grid-container {
+  display: grid;
+  grid-template-rows: auto 70dvh auto auto auto;
 }
 
-.arboleda {
-    height: 10em;
-    background-image: url(../assets/arboles.png);
-    background-repeat: repeat;
-    background-size: contain;
+.nav {
+  background-color: #f2a099;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1em;
+}
+.nav-logo {
+  text-align: center;
+  float: left;
+  margin-left: 1em;
+}
+.nav-logo-marca {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
+}
+.nav-logo-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.nav-carpincho {
+  display: none;
+}
+.nav-menu-box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+.nav-menu-icon {
+  margin-right: 1em;
+  cursor: pointer;
+}
+.nav-menu {
+  border: #fcfcfc 1px solid;
+  border-radius: 10px;
+  background-color: #f2c2c2;
+  padding: 1em;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 2.5em;
+  right: 1em;
+}
+.nav-menu-item {
+  padding: 8px 0;
+}
+.nav-menu-item:hover {
+  background-color: #f2a099;
+}
+.nav-menu-item-artistas {
+  font-size: 0.9rem;
+}
+.nav-menu-item-artistas li {
+  padding: 4px;
+}
+.nav-menu-item-artistas li:hover {
+  background-color: #f2a099;
 }
 
-
-.hojas {
-    background-image: url(../assets/fondoHojas.png);
-    background-size: cover;
+.nav-menu-box:hover .nav-menu {
+  display: flex;
 }
 
-.retrato {
-    max-height: 60vh;
+/* fin Header-Menu */
+/* Index - Main */
+.index-main {
+  background-image: url(../assets/fondoRamas.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 1em;
+}
+.index-main-marca {
+  background-color: white;
+  border-radius: 50px;
+  width: 25%;
+  min-width: 250px;
+  margin: 0 auto;
+}
+.index-main-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.2rem;
+  padding: 8px;
 }
 
-.mini-retrato {
-    max-height: 20vh;
+/* fin Index-Main */
+/* Index - Nuestros Artistas */
+.artistas {
+  background-image: url(../assets/FondoMadera.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 24px;
 }
+.artistas .artistas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
+}
+.artistas .artistas-container .artista {
+  padding: 16px;
+  border: 1px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+.artistas .artistas-container .artista-img {
+  width: 250px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+/* fin Index Nuestros Artistas */
+/* index Nuestra Esencia */
+.index-esencia {
+  text-align: center;
+  padding: 24px;
+}
+.index-esencia p {
+  padding: 8px 24px;
+}
+
+/* fin Index - Nuestra esencia */
+/* footer */
+.footer {
+  background-color: #f2a099;
+  text-align: center;
+}
+.footer-arboleda {
+  height: 150px;
+  background-image: url(../assets/arboles.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.footer-logo {
+  padding: 8px;
+}
+.footer-logo-marca {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
+}
+.footer-logo-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer > p {
+  font-size: small;
+  padding-bottom: 8px;
+}
+
+/* Páginas artistas */
+
+/*# sourceMappingURL=style.css.map */

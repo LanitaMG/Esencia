@@ -1,288 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
 
-    <!-- Boostrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Esencia - Lucía Gómez</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-  <body>
-    <!-- Encabezado -->
-    <header class="encabezado">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid position-relative">
-          <!-- Encabezado - Logo + Slogan -->
-          <a
-            class="navbar-brand align-self-center text-center"
-            href="../index.html"
-          >
-            <span class="logo fs-3">ESENCIA</span>
-            <p class="slogan fs-6 m-0 text-secondary">Alma de bosque</p>
-          </a>
-          <!-- Carpincho - Visible solo en md -->
-          <img
-            class="d-none d-md-block position-absolute top-50 start-50 translate-middle"
-            src="../assets/carpincho2.png"
-            alt="Carpincho de madera"
-            width="100px"
-          />
-          <!-- Encabezado - Menú -->
-          <div class="align-self-center">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Artistas
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="./luciagomez.html"
-                        >Lucía Gómez</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./cuchilepratte.html"
-                        >Cuchi Lepratte</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./pedrofernandez.html"
-                        >Pedro Fernández</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
+  <!-- Boostrap -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Esencia - Lucía Gómez</title>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header class="nav">
+    <div class="nav-logo-box">
+      <a class="nav-logo" href="../index.html">
+        <p class="nav-logo-marca">ESENCIA</span>
+          <p class="nav-logo-slogan">Alma de bosque</p>
+      </a>
+    </div>
+    <!-- Carpincho - Visible solo en md -->
+    <img class="nav-carpincho" src="../assets/carpincho2.png" alt="Carpincho de madera" width="100px" />
+    <!-- Encabezado - Menú -->
+    <div class="nav-menu-box">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+        class="nav-menu-icon bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a class="" href="../index.html">Inicio</a>
+        </li>
+        <li class="menu-artistas ">Artistas:
+          <ul class="nav-menu-item-artistas">
+            <li><a href="./luciagomez.html">Lucía Gómez</a></li>
+            <li><a href="./cuchilepratte.html">Cuchi Lepratte</a></li>
+            <li><a href="./pedrofernandez.html">Pedro Fernández</a></li>
+          </ul>
+        <li class="nav-menu-item">
+          <a class="" href="./contacto.html">Contacto</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main class="artista-main">
+    <div class="artista">
+        <img src="../assets/artistaLuciaGomez.png" class="artista-img" alt="Retrato de Lucía Gómez" />
+      <div class="artista-datos">
+        <h1 class="artista-datos-nombre">Lucía Gómez</h1>
+        <p><span class="bi bi-geo-alt"></span> San José - Entre Ríos</p>
+        <span class="bi bi-instagram"></span><a href="http://www.instagram.com" target="_blank"
+            rel="noopener noreferrer">
+            @luciagomez_animalando</a>
+      </div>
+    </div>
+  </main>
+  <section class="artista-descripcion">
+    <p>
+      Lucía es una artista muy talentosa y ha creado una gran variedad de
+      animales en madera. Sus obras son muy detalladas y realistas, y cada
+      pieza es única. La artista tiene una gran pasión por la naturaleza y
+      esto se refleja en su trabajo. Sus animales en madera son una forma de
+      honrar a la naturaleza y crear conciencia sobre la importancia de cuidar
+      nuestro planeta.
+    </p>
+    <p>
+      La artista es muy respetada en su comunidad y ha sido reconocida por su
+      trabajo en varias ocasiones. Su compromiso con el medio ambiente y su
+      habilidad para crear obras de arte hermosas y detalladas la hacen una
+      artista muy especial.
+    </p>
+  </section>
+
+  <section class="obras">
+    <h2 class="">Obras</h2>
+    <div class="obras-container">
+      <img src="../assets/animal_01.png" alt="Buho" class="" />
+      <img src="../assets/animal_02.png" alt="Gato" class="" />
+      <img src="../assets/animal_03.png" alt="Mariposa" class="" />
+      <img src="../assets/animal_02.png" alt="Gato" class="" />
+      <img src="../assets/animal_03.png" alt="Mariposa" class="" />
+      <img src="../assets/animal_01.png" alt="Buho" class="" />
+      <img src="../assets/animal_03.png" alt="Mariposa" class="" />
+      <img src="../assets/animal_01.png" alt="Buho" class="" />
+      <img src="../assets/animal_02.png" alt="Gato" class="" />
+    </div>
+  </section>
+
+  <!-- Nuestros Artistas -->
+  <section>
+    <article class="">
+      <div class="">
+        <p class="">Conoce también a estos artistas:</p>
+        <div class="">
+          <div class="">
+            <a href="./cuchilepratte.html" class="">
+              <img src="../assets/artistaCuchiLepratte.png" class=""
+                alt="Retrato de la artista Cuchi Lepratte" />
+              <p>Cuchi Lepratte</p>
+            </a>
+          </div>
+          <div class="">
+            <a href="./pedrofernandez.html" class="">
+              <img src="../assets/artistaPedroFernandez.png" class=""
+                alt="Retrato del artista Pedro Fernández" />
+              <p>Pedro Fernández</p>
+            </a>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main class="container-fluid hojas">
-      <div class="row p-5 text-center">
-        <div class="col-md-4 offset-md-2">
-          <img
-            src="../assets/artistaLuciaGomez.png"
-            class="rounded-pill img-fluid retrato"
-            alt="Retrato de Lucía Gómez"
-          />
-        </div>
-        <div class="col-md-4 align-self-center">
-          <h1 class="display-4 p-3">Lucía Gómez</h1>
-          <p><span class="bi bi-geo-alt"></span> San José - Entre Ríos</p>
-          <p>
-            <span class="bi bi-instagram"></span
-            ><a
-              class="text-decoration-none text-muted"
-              href="http://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @luciagomez_animalando</a
-            >
-          </p>
-        </div>
       </div>
-    </main>
-    <section class="container text-center p-3">
-      <p>
-        Lucía es una artista muy talentosa y ha creado una gran variedad de
-        animales en madera. Sus obras son muy detalladas y realistas, y cada
-        pieza es única. La artista tiene una gran pasión por la naturaleza y
-        esto se refleja en su trabajo. Sus animales en madera son una forma de
-        honrar a la naturaleza y crear conciencia sobre la importancia de cuidar
-        nuestro planeta.
-      </p>
-      <p>
-        La artista es muy respetada en su comunidad y ha sido reconocida por su
-        trabajo en varias ocasiones. Su compromiso con el medio ambiente y su
-        habilidad para crear obras de arte hermosas y detalladas la hacen una
-        artista muy especial.
-      </p>
-    </section>
+    </article>
+  </section>
 
-    <section class="container text-center p-3">
-      <h2 class="display-5 p-5">Obras</h2>
-      <div class="row g-3 pb-5">
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_01.png"
-            alt="Buho"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_02.png"
-            alt="Gato"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_03.png"
-            alt="Mariposa"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_02.png"
-            alt="Gato"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_03.png"
-            alt="Mariposa"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_01.png"
-            alt="Buho"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_03.png"
-            alt="Mariposa"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_01.png"
-            alt="Buho"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/animal_02.png"
-            alt="Gato"
-            class="img-fluid shadow rounded-3"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Nuestros Artistas -->
-    <section>
-      <article class="container-fluid p-3">
-        <div class="container text-center">
-          <p class="fs-5">Conoce también a estos artistas:</p>
-          <div class="row">
-            <div class="col-md-4 offset-md-2">
-              <a
-                href="./cuchilepratte.html"
-                class="text-decoration-none text-muted"
-              >
-                <img
-                  src="../assets/artistaCuchiLepratte.png"
-                  class="rounded-pill mini-retrato"
-                  alt="Retrato de la artista Cuchi Lepratte"
-                />
-                <p>Cuchi Lepratte</p>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a
-                href="./pedrofernandez.html"
-                class="text-decoration-none text-muted"
-              >
-                <img
-                  src="../assets/artistaPedroFernandez.png"
-                  class="rounded-pill mini-retrato"
-                  alt="Retrato del artista Pedro Fernández"
-                />
-                <p>Pedro Fernández</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- Footer -->
-    <footer class="pie">
-      <div class="arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
-      <div class="container-fluid text-center pt-3">
-        <a class="text-decoration-none text-muted" href="../index.html">
-          <span class="logo fs-3"> ESENCIA </span>
-          <p class="slogan fs-6">Alma de bosque</p>
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
+      <div class="footer-logo">
+        <a href="../index.html">
+          <p class="footer-logo-marca"> ESENCIA </p>
+          <p class="footer-logo-slogan">Alma de bosque</p>
         </a>
-        <p class="small m-0 pb-3">
-          Las imágenes y los textos que ves en este sitio web fueron generados
-          mediante IA
-        </p>
       </div>
+      <p>
+        Las imágenes y los textos que ves en este sitio web fueron generados
+        mediante IA
+      </p>
     </footer>
 
-    <!-- scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
