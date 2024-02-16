@@ -13,6 +13,7 @@
 body {
   font-family: Montserrat, sans-serif;
   background-color: #fcfcfc;
+  color: #1d1d1d;
 }
 
 a {
@@ -24,11 +25,17 @@ li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
+/* fin Reset */
 h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 2em;
   padding: 16px;
-  font-weight: normal;
+  font-weight: 500;
+  text-shadow: 2px 2px #f2c2c2;
 }
 
 h2 {
@@ -43,17 +50,12 @@ h3 {
   font-size: 1.2em;
   padding: 8px;
   font-weight: normal;
+  text-shadow: 1px 1px #a4bfb8;
 }
 
-/* fin Reset */
 /* Header - Menú */
-.index-grid-container {
-  display: grid;
-  grid-template-rows: auto 70dvh auto auto auto;
-}
-
 .nav {
-  background-color: #f2a099;
+  background: linear-gradient(to bottom right, #f2a099, #f2c2c2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1em;
@@ -116,13 +118,39 @@ h3 {
 }
 
 /* fin Header-Menu */
+/* footer */
+.footer {
+  text-align: center;
+}
+.footer-arboleda {
+  height: 150px;
+  background-image: url(../assets/arboles.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.footer-logo {
+  background: linear-gradient(to bottom right, #f2c2c2, #f2a099);
+  padding: 8px;
+}
+.footer-logo-marca {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
+}
+.footer-logo-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer-logo > p {
+  font-size: small;
+  padding: 8px;
+}
+
 /* Index - Main */
 .index-main {
   background-image: url(../assets/fondoRamas.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   text-align: center;
-  padding: 1em;
+  padding: 48px;
 }
 .index-main-marca {
   background-color: white;
@@ -136,12 +164,17 @@ h3 {
   font-size: 1.2rem;
   padding: 8px;
 }
+.index-main-img {
+  max-width: 300px;
+  transition-duration: 3s;
+}
 
 /* fin Index-Main */
 /* Index - Nuestros Artistas */
 .artistas {
   background-image: url(../assets/FondoMadera.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 24px;
 }
@@ -154,15 +187,16 @@ h3 {
 }
 .artistas .artistas-container .artista {
   padding: 16px;
-  border: 1px solid #fcfcfc;
+  border: 1px solid #dcf2e4;
   background-color: rgba(252, 252, 252, 0.5);
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
+  max-width: 250px;
 }
 .artistas .artistas-container .artista-img {
-  width: 250px;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
+  box-shadow: 1px 1px 3px #574a49;
 }
 
 /* fin Index Nuestros Artistas */
@@ -170,38 +204,144 @@ h3 {
 .index-esencia {
   text-align: center;
   padding: 24px;
+  background: linear-gradient(#fcfcfc 30%, #f2c2c2, #f2a099, #a4bfb8, #dcf2e4, #fcfcfc);
+}
+.index-esencia .esencia-text-box {
+  max-width: 80ch;
+  margin: 0 auto;
 }
 .index-esencia p {
-  padding: 8px 24px;
+  padding: 8px 0;
 }
 
 /* fin Index - Nuestra esencia */
-/* footer */
-.footer {
-  background-color: #f2a099;
+/* Páginas artistas */
+.artista-main {
+  background-image: url(../assets/fondoHojas.png);
+  background-size: cover;
+  padding: 48px;
+}
+.artista-main .artista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
   text-align: center;
 }
-.footer-arboleda {
-  height: 150px;
-  background-image: url(../assets/arboles.png);
-  background-size: contain;
-  background-repeat: repeat;
+.artista-main .artista-img {
+  max-width: 350px;
+  min-width: 250px;
+  border-radius: 100%;
+  box-shadow: 2px 2px 10px #574a49;
 }
-.footer-logo {
-  padding: 8px;
+.artista-main .artista-datos {
+  padding-bottom: 24px;
 }
-.footer-logo-marca {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.5rem;
+.artista-main .artista-datos-nombre {
+  padding: 24px;
 }
-.footer-logo-slogan {
-  font-family: "Montserrat Alternates", sans-serif;
-}
-.footer > p {
-  font-size: small;
-  padding-bottom: 8px;
+.artista-main .artista-datos-contacto p {
+  padding: 4px;
 }
 
-/* Páginas artistas */
+.artista-descripcion {
+  padding: 24px;
+}
+.artista-descripcion p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80ch;
+  padding: 8px;
+}
+
+.obras {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1200px;
+  text-align: center;
+}
+.obras-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.obras .obra {
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+}
+.obras .obra-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px #574a49;
+}
+.obras .obra-datos {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(242, 160, 153, 0.7);
+  position: absolute;
+  bottom: -15px;
+  padding: 8px;
+  color: #fcfcfc;
+  display: block;
+  opacity: 0;
+  border-radius: 8px;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.obras .obra:hover .obra-datos {
+  opacity: 1;
+  display: block;
+  bottom: 0;
+}
+
+.acceso {
+  padding: 64px 24px 24px 24px;
+  text-align: center;
+}
+.acceso-box {
+  margin: 0 auto;
+  padding: 24px;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+.acceso-artista {
+  max-width: 200px;
+}
+.acceso-artista-img {
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px #574a49;
+}
+
+.contacto-main .contacto {
+  display: flex;
+  padding: 24px;
+}
+.contacto-main .contacto-form label {
+  display: block;
+  padding: 16px 0 8px 0;
+}
+.contacto-main .contacto-form input {
+  border: 1px solid #a4bfb8;
+  height: 32px;
+  min-width: 200px;
+  width: 100%;
+}
+.contacto-main .contacto-form textarea {
+  border: 1px solid #a4bfb8;
+  min-width: 200px;
+  width: 100%;
+}
+.contacto-main .redes {
+  display: flex;
+  justify-content: space-around;
+}
 
 /*# sourceMappingURL=style.css.map */

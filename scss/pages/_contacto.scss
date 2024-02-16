@@ -1,0 +1,42 @@
+
+
+.contacto-main {
+    
+    
+    .contacto {
+        display: flex;
+    
+     
+        padding: 24px;
+
+        &-form {
+            label {
+                display: block;
+                padding: 16px 0 8px 0;
+
+            }
+            input {
+                border: 1px solid $secondary-color;
+                height: 32px;
+                min-width: 200px;
+                width: 100%;                
+            }
+            textarea {
+                border: 1px solid $secondary-color;
+                min-width: 200px;
+                width: 100%;
+            }
+
+        }
+
+        &-carpincho {
+            
+        }
+
+    }
+    .redes {
+        display: flex;
+       justify-content: space-around;
+     
+    }
+}
