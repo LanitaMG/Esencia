@@ -24,10 +24,14 @@
 
     &-img {
         max-width: 300px;
-        transition-duration: 3s;
+        transition-duration: 1s;
     }
 
+}
 
+.index-main-img:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;    
 }
 
 /* fin Index-Main */
@@ -36,7 +40,8 @@
 .artistas {
     background-image: url(../assets/FondoMadera.jpg);
     background-size: cover ;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     text-align: center;
     padding: 24px;
 
@@ -49,7 +54,7 @@
 
         .artista {
             padding: 16px;
-            border: 1px solid $secondary-color-light;
+            border: 1px solid $grey-light;
             background-color: rgba($grey-light, 0.5);
             border-top-left-radius: 30%;
             border-top-right-radius: 30%;
@@ -64,6 +69,10 @@
     }
 }
 
+.artistas .artista:hover {
+    box-shadow: 2px 1px 10px $shadow-color;    
+}
+
 /* fin Index Nuestros Artistas */
 
 /* index Nuestra Esencia */
@@ -71,8 +80,7 @@
 .index-esencia {
     text-align: center;
     padding: 24px;
-    background: linear-gradient($grey-light 30%, $primary-color-light, $primary-color, $secondary-color,$secondary-color-light, $grey-light);
-
+    
     .esencia-text-box {
         max-width: 80ch;
         margin: 0 auto;

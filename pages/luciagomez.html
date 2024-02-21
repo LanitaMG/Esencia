@@ -14,8 +14,6 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-  <!-- Boostrap -->
-
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
   <title>Esencia - Lucía Gómez</title>
@@ -25,29 +23,25 @@
   <!-- Encabezado -->
   <header class="nav">
     <div class="nav-logo-box">
-      <a class="nav-logo" href="../index.html">
+      <a class="nav-logo" href="index.html">
         <p class="nav-logo-marca">ESENCIA</span>
           <p class="nav-logo-slogan">Alma de bosque</p>
       </a>
     </div>
     <!-- Carpincho - Visible solo en md -->
-    <img class="nav-carpincho" src="../assets/carpincho2.png" alt="Carpincho de madera" width="100px" />
+    <img class="nav-carpincho" src="../assets/carpincho2.png" alt="Carpincho de madera" />
     <!-- Encabezado - Menú -->
     <div class="nav-menu-box">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-        class="nav-menu-icon bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-      </svg>
+      <i class="bi bi-list nav-menu-icon"></i>
       <ul class="nav-menu">
         <li class="nav-menu-item">
-          <a class="" href="../index.html">Inicio</a>
+          <a href="../index.html">Inicio</a>
         </li>
-        <li class="menu-artistas ">Artistas:
-          <ul class="nav-menu-item-artistas">
-            <li><a href="./luciagomez.html">Lucía Gómez</a></li>
-            <li><a href="./cuchilepratte.html">Cuchi Lepratte</a></li>
-            <li><a href="./pedrofernandez.html">Pedro Fernández</a></li>
+        <li class="nav-menu-item nav-menu-artistas active">Artistas
+          <ul class="nav-artistas">
+            <li class="nav-artistas-item"><a href="./luciagomez.html">Lucía Gómez</a></li>
+            <li class="nav-artistas-item"><a href="./cuchilepratte.html">Cuchi Lepratte</a></li>
+            <li class="nav-artistas-item"><a href="./pedrofernandez.html">Pedro Fernández</a></li>
           </ul>
         <li class="nav-menu-item">
           <a class="" href="./contacto.html">Contacto</a>
@@ -56,37 +50,39 @@
       </ul>
     </div>
   </header>
+  <!-- Fin Encabezado -->
 
-
+  <!-- Presentación Artista -->
   <main class="artista-main">
-    <div class="artista"> 
+    <div class="artista">
       <img src="../assets/artistaLuciaGomez.png" class="artista-img" alt="Retrato de Lucía Gómez" />
       <div class="artista-datos">
         <h1 class="artista-datos-nombre">Lucía Gómez</h1>
         <div class="artista-datos-contacto">
           <p class="bi bi-geo-alt"> San José - Entre Ríos</p>
-          <p class="bi bi-instagram"><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"> @luciagomez_animalando</a></p>
+          <p class="bi bi-instagram"><a href="http://www.instagram.com" target="_blank"> @luciagomez_animalando</a></p>
         </div>
       </div>
     </div>
   </main>
-    <section class="artista-descripcion">
-      <p>
-        Lucía es una artista muy talentosa y ha creado una gran variedad de
-        animales en madera. Sus obras son muy detalladas y realistas, y cada
-        pieza es única. La artista tiene una gran pasión por la naturaleza y
-        esto se refleja en su trabajo. Sus animales en madera son una forma de
-        honrar a la naturaleza y crear conciencia sobre la importancia de cuidar
-        nuestro planeta.
-      </p>
-      <p>
-        La artista es muy respetada en su comunidad y ha sido reconocida por su
-        trabajo en varias ocasiones. Su compromiso con el medio ambiente y su
-        habilidad para crear obras de arte hermosas y detalladas la hacen una
-        artista muy especial.
-      </p>
-    </section>
+  <section class="artista-descripcion">
+    <p>
+      Lucía es una artista muy talentosa y ha creado una gran variedad de
+      animales en madera. Sus obras son muy detalladas y realistas, y cada
+      pieza es única. La artista tiene una gran pasión por la naturaleza y
+      esto se refleja en su trabajo. Sus animales en madera son una forma de
+      honrar a la naturaleza y crear conciencia sobre la importancia de cuidar
+      nuestro planeta.
+    </p>
+    <p>
+      La artista es muy respetada en su comunidad y ha sido reconocida por su
+      trabajo en varias ocasiones. Su compromiso con el medio ambiente y su
+      habilidad para crear obras de arte hermosas y detalladas la hacen una
+      artista muy especial.
+    </p>
+  </section>
 
+  <!-- Galería de obras -->
   <section class="obras">
     <h2 class="">Obras</h2>
     <div class="obras-container">
@@ -111,7 +107,7 @@
           <p>Madera de pino descartada por aserraderos</p>
         </div>
       </div>
-            <div class="obra">
+      <div class="obra">
         <img src="../assets/animal_01.png" alt="Buho" class="obra-img" />
         <div class="obra-datos">
           <h3>Buho</h3>
@@ -132,7 +128,7 @@
           <p>Madera de pino descartada por aserraderos</p>
         </div>
       </div>
-            <div class="obra">
+      <div class="obra">
         <img src="../assets/animal_01.png" alt="Buho" class="obra-img" />
         <div class="obra-datos">
           <h3>Buho</h3>
@@ -153,24 +149,24 @@
           <p>Madera de pino descartada por aserraderos</p>
         </div>
       </div>
-      
-
     </div>
   </section>
 
-  <!-- Nuestros Artistas -->
+  <!-- Acceso a otros artistas -->
   <section class="acceso">
     <p>Conoce también a estos artistas:</p>
     <div class="acceso-box">
       <div class="acceso-artista">
         <a href="./cuchilepratte.html" class="">
-          <img src="../assets/artistaCuchiLepratte.png" class="acceso-artista-img" alt="Retrato de la artista Cuchi Lepratte" />
+          <img src="../assets/artistaCuchiLepratte.png" class="acceso-artista-img"
+            alt="Retrato de la artista Cuchi Lepratte" />
           Cuchi Lepratte
         </a>
       </div>
       <div class="acceso-artista">
         <a href="./pedrofernandez.html" class="">
-          <img src="../assets/artistaPedroFernandez.png" class="acceso-artista-img" alt="Retrato del artista Pedro Fernández" />
+          <img src="../assets/artistaPedroFernandez.png" class="acceso-artista-img"
+            alt="Retrato del artista Pedro Fernández" />
           Pedro Fernández
         </a>
       </div>
@@ -178,21 +174,21 @@
   </section>
 
   <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
-      <div class="footer-logo">
-        <a href="../index.html">
-          <p class="footer-logo-marca"> ESENCIA </p>
-          <p class="footer-logo-slogan">Alma de bosque</p>
-        </a>
-        <p>
-          Las imágenes y los textos que ves en este sitio web fueron generados
-          mediante IA
-        </p>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer-arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
+    <div class="footer-logo">
+      <a href="../index.html">
+        <p class="footer-logo-marca"> ESENCIA </p>
+        <p class="footer-logo-slogan">Alma de bosque</p>
+      </a>
+      <p>
+        Las imágenes y los textos que ves en este sitio web fueron generados
+        mediante IA
+      </p>
+    </div>
+  </footer>
 
- 
+
 </body>
 
 </html>

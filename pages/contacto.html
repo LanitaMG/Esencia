@@ -13,10 +13,9 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-  <!-- Boostrap -->
-
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+
   <title>Esencia - Contacto</title>
 </head>
 
@@ -24,67 +23,59 @@
   <!-- Encabezado -->
   <header class="nav">
     <div class="nav-logo-box">
-      <a class="nav-logo" href="../index.html">
+      <a class="nav-logo" href="index.html">
         <p class="nav-logo-marca">ESENCIA</span>
           <p class="nav-logo-slogan">Alma de bosque</p>
       </a>
     </div>
     <!-- Carpincho - Visible solo en md -->
-    <img class="nav-carpincho" src="../assets/carpincho2.png" alt="Carpincho de madera" width="100px" />
+    <img class="nav-carpincho" src="../assets/carpincho2.png" alt="Carpincho de madera" />
     <!-- Encabezado - Menú -->
     <div class="nav-menu-box">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-        class="nav-menu-icon bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-      </svg>
+      <i class="bi bi-list nav-menu-icon"></i>
       <ul class="nav-menu">
         <li class="nav-menu-item">
-          <a class="" href="../index.html">Inicio</a>
+          <a href="../index.html">Inicio</a>
         </li>
-        <li class="menu-artistas ">Artistas:
-          <ul class="nav-menu-item-artistas">
-            <li><a href="./luciagomez.html">Lucía Gómez</a></li>
-            <li><a href="./cuchilepratte.html">Cuchi Lepratte</a></li>
-            <li><a href="./pedrofernandez.html">Pedro Fernández</a></li>
+        <li class="nav-menu-item nav-menu-artistas">Artistas
+          <ul class="nav-artistas">
+            <li class="nav-artistas-item"><a href="./luciagomez.html">Lucía Gómez</a></li>
+            <li class="nav-artistas-item"><a href="./cuchilepratte.html">Cuchi Lepratte</a></li>
+            <li class="nav-artistas-item"><a href="./pedrofernandez.html">Pedro Fernández</a></li>
           </ul>
-        <li class="nav-menu-item">
+        <li class="nav-menu-item active">
           <a class="" href="./contacto.html">Contacto</a>
         </li>
         </li>
       </ul>
     </div>
   </header>
-<!-- Fin header -->
+  <!-- Fin Encabezado -->
 
 <main class="contacto-main">
   <div class="contacto">
-    <div>
-
-      <h1>¡Hablemos!</h1>
+     <h1>¡Hablemos!</h1>
       <p>Si quieres saber más sobre nuestra forma de trabajo, conocer nuestros talleres o adquirir algunas de nuestras obras ¡escríbenos!</p>
       
+      <ul class="contacto-redes">
+        <li><span class="bi bi-instagram"></span><a href="http://www.instagram.com" target="_blank"> @esencia_arte</a></li>
+        <li><span class="bi bi-whatsapp"></span><a href="https://api.whatsapp.com/" target="_blank"> +54 (123) 4567890</a></li>
+        <li><span class="bi bi-envelope-at"></span><a href="mailto:info@esencia.com.ar" target="_blank"> info@esencia.com.ar</a></li>
+      </ul>
+
+      <p>Puedes utilizar también el siguiente formulario:</p>
       <form action="" class="contacto-form">
         <label for="nombre">Nombre:</label>
         <input id="nombre" type="text">
         <label for="email">Correo electrónico:</label>
         <input id="email" type="email">
         <label for="asunto">Mensaje:</label>
-        <textarea name="asunto" id="aunto" cols="30" rows="10"></textarea>
-        <input type="button" value="Enviar" />
+        <textarea name="asunto" id="asunto"></textarea>
+        <input class="contacto-form-button" type="button" value="Enviar" />
       </form>
     </div>
-    <img src="../assets/carpincho2.png" alt="carpincho"  class="contacto-carpincho">
-
-    <div class="redes">
-                <span class="bi bi-instagram"><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"> @esencia_arte</a></span>
-                <span class="bi bi-whatsapp"><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"> +54 (123) 4567890</a></span>
-                <span class="bi bi-envelope-at"><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"> info@esencia.com.ar</a></span>
-    </div>
+    
   </div>
-  
-
-
 
 </main>
 

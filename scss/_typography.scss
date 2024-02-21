@@ -1,4 +1,4 @@
-h1 {
+@mixin titulo-principal {
     font-family: map-get($map: $h1-font, $key: family);
     font-size: map-get($map: $h1-font, $key: size);
     padding: map-get($map: $h1-font, $key: padding);
@@ -6,17 +6,33 @@ h1 {
     text-shadow: 2px 2px $primary-color-light;
 }
 
-h2 {
+@mixin titulo-secundario {
     font-family: map-get($map: $h2-font, $key: family);
     font-size: map-get($map: $h2-font, $key: size);
     padding: map-get($map: $h2-font, $key: padding);
     font-weight: normal;
 }
 
-h3 {
+@mixin subtitulo {
     font-family: map-get($map: $h3-font, $key: family);
     font-size: map-get($map: $h3-font, $key: size);
     padding: map-get($map: $h3-font, $key: padding);
     font-weight: normal;
     text-shadow: 1px 1px $secondary-color;
+}
+
+h1 {
+    @include titulo-principal();
+    text-align: center;
+    
+}
+
+h2 {
+    @include titulo-secundario();
+    text-align: center;
+}
+
+h3 {
+    @include subtitulo();
+    text-align: center;
 }

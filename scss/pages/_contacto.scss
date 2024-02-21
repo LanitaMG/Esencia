@@ -1,42 +1,78 @@
 
 
 .contacto-main {
-    
-    
+       
     .contacto {
         display: flex;
-    
-     
+        flex-direction: column;
+        align-items: center;
         padding: 24px;
+        gap: 24px;
+
+        p {
+            text-align:justify;
+            max-width: 60ch;
+        }
+        
+        &-redes {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: space-around;   
+            
+            
+            .bi {
+                color: $secondary-color;
+            }
+         
+        }
 
         &-form {
+            padding: 16px;
+            border: 1px solid $secondary-color;
+            border-radius: 5px;
+            box-shadow: 1px 2px 5px $shadow-color ;
+            
             label {
                 display: block;
-                padding: 16px 0 8px 0;
+                padding: 8px 0 4px 0;
 
             }
             input {
                 border: 1px solid $secondary-color;
                 height: 32px;
-                min-width: 200px;
+                min-width: 80px;
                 width: 100%;                
             }
             textarea {
                 border: 1px solid $secondary-color;
-                min-width: 200px;
                 width: 100%;
+                min-height: 124px;
+                // form-sizing: content;
             }
 
+            &-button {
+                background-color: $secondary-color;
+                border: 1px solid $secondary-color-light;
+                color: $grey-light;
+                margin-top: 8px;
+            }
+
+
         }
 
-        &-carpincho {
-            
-        }
-
-    }
-    .redes {
-        display: flex;
-       justify-content: space-around;
-     
+      
     }
 }
+
+.contacto-carpincho {
+    width: 250px;
+    // position: absolute;
+    margin-left: 70vw;
+    margin-bottom: 0px;
+    transform: rotate(50deg, 90deg);
+    animation: movimiento 3s ease-in-out, salto 1s ease 4;
+    
+
+}
+

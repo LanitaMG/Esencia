@@ -1,0 +1,93 @@
+@media (min-width: 800px) {
+    //
+    //* Header *
+    //
+
+    .nav {
+        grid-template-columns: 3fr 1fr 3fr;
+
+        // **************
+        // * Nav - Logo *
+        // **************
+        //Sin modificaciones
+
+        // *******************
+        // * Nav - Carpincho *
+        // *******************
+        &-carpincho {
+            display: block;
+            width: 80px;
+            justify-self: center;
+        }
+
+        // **************
+        // * Nav - Menú *
+        // **************
+
+        &-menu-icon {
+            display: none;
+        }
+
+        &-menu {
+            border: none;
+            border-radius: 0;
+            background-color: inherit;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            position: relative;
+            top: 0;
+            right: 0;
+            align-self: start;
+            margin-right: 1em;
+
+            &-item {
+                padding: 8px;
+
+                a {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .nav-artistas {
+            display: none;
+            font-size: 1rem;
+            padding: 8px;
+            flex-direction: column;
+            position: absolute;
+            gap: 8px;
+            background-color: $primary-color;
+            border: 1px solid $primary-color-light;
+            border-radius: 10%;
+            
+
+            &-item {
+                padding: 4px;
+
+            }
+        }
+    }
+
+    .active {
+        background-color: $primary-color-light;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .nav-menu-item:hover, .nav-artistas-item:hover {
+        border-bottom: 3px solid $primary-color-light;
+    }
+
+    .nav-menu-artistas:hover .nav-artistas {
+        display: flex;
+    }
+
+ /* Fin Nav - Menú */
+
+ /* Fin Header*/
+
+ 
+
+}

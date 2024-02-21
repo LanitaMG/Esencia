@@ -36,6 +36,7 @@ h1 {
   padding: 16px;
   font-weight: 500;
   text-shadow: 2px 2px #f2c2c2;
+  text-align: center;
 }
 
 h2 {
@@ -43,6 +44,7 @@ h2 {
   font-size: 1.5em;
   padding: 16px;
   font-weight: normal;
+  text-align: center;
 }
 
 h3 {
@@ -51,14 +53,14 @@ h3 {
   padding: 8px;
   font-weight: normal;
   text-shadow: 1px 1px #a4bfb8;
+  text-align: center;
 }
 
-/* Header - Menú */
 .nav {
-  background: linear-gradient(to bottom right, #f2a099, #f2c2c2);
+  background-color: #f2a099;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 1em;
+  padding: 8px 0;
 }
 .nav-logo {
   text-align: center;
@@ -82,6 +84,7 @@ h3 {
   position: relative;
 }
 .nav-menu-icon {
+  font-size: 24px;
   margin-right: 1em;
   cursor: pointer;
 }
@@ -100,17 +103,9 @@ h3 {
 .nav-menu-item {
   padding: 8px 0;
 }
-.nav-menu-item:hover {
-  background-color: #f2a099;
-}
-.nav-menu-item-artistas {
+.nav-menu .nav-artistas-item {
   font-size: 0.9rem;
-}
-.nav-menu-item-artistas li {
   padding: 4px;
-}
-.nav-menu-item-artistas li:hover {
-  background-color: #f2a099;
 }
 
 .nav-menu-box:hover .nav-menu {
@@ -118,7 +113,6 @@ h3 {
 }
 
 /* fin Header-Menu */
-/* footer */
 .footer {
   text-align: center;
 }
@@ -131,6 +125,7 @@ h3 {
 .footer-logo {
   background: linear-gradient(to bottom right, #f2c2c2, #f2a099);
   padding: 8px;
+  /* Fin Footer - Logo */
 }
 .footer-logo-marca {
   font-family: "Montserrat Alternates", sans-serif;
@@ -144,6 +139,7 @@ h3 {
   padding: 8px;
 }
 
+/* Fin Footer */
 /* Index - Main */
 .index-main {
   background-image: url(../assets/fondoRamas.png);
@@ -166,7 +162,12 @@ h3 {
 }
 .index-main-img {
   max-width: 300px;
-  transition-duration: 3s;
+  transition-duration: 1s;
+}
+
+.index-main-img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 /* fin Index-Main */
@@ -174,7 +175,8 @@ h3 {
 .artistas {
   background-image: url(../assets/FondoMadera.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   text-align: center;
   padding: 24px;
 }
@@ -187,7 +189,7 @@ h3 {
 }
 .artistas .artistas-container .artista {
   padding: 16px;
-  border: 1px solid #dcf2e4;
+  border: 1px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.5);
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
@@ -196,7 +198,11 @@ h3 {
 .artistas .artistas-container .artista-img {
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
-  box-shadow: 1px 1px 3px #574a49;
+  box-shadow: 1px 1px 3px #9e8786;
+}
+
+.artistas .artista:hover {
+  box-shadow: 2px 1px 10px #9e8786;
 }
 
 /* fin Index Nuestros Artistas */
@@ -204,7 +210,6 @@ h3 {
 .index-esencia {
   text-align: center;
   padding: 24px;
-  background: linear-gradient(#fcfcfc 30%, #f2c2c2, #f2a099, #a4bfb8, #dcf2e4, #fcfcfc);
 }
 .index-esencia .esencia-text-box {
   max-width: 80ch;
@@ -233,7 +238,7 @@ h3 {
   max-width: 350px;
   min-width: 250px;
   border-radius: 100%;
-  box-shadow: 2px 2px 10px #574a49;
+  box-shadow: 2px 2px 10px #9e8786;
 }
 .artista-main .artista-datos {
   padding-bottom: 24px;
@@ -266,6 +271,9 @@ h3 {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
+  background: radial-gradient(#fcfcfc, #f2f2f2, #a4bfb8);
+  padding: 32px 0;
+  border-radius: 16px;
 }
 .obras .obra {
   position: relative;
@@ -275,7 +283,13 @@ h3 {
 .obras .obra-img {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 2px 2px 10px #574a49;
+  box-shadow: 2px 2px 10px #9e8786;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show-obras;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 .obras .obra-datos {
   width: 100%;
@@ -288,8 +302,7 @@ h3 {
   display: block;
   opacity: 0;
   border-radius: 8px;
-  transition-duration: 1s;
-  transition-timing-function: ease;
+  transition: all 0.5 ease-in-out;
 }
 .obras .obra:hover .obra-datos {
   opacity: 1;
@@ -313,35 +326,145 @@ h3 {
 }
 .acceso-artista {
   max-width: 200px;
+  padding: 16px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
 }
 .acceso-artista-img {
   width: 100%;
   border-radius: 100%;
-  box-shadow: 2px 2px 5px #574a49;
+  box-shadow: 2px 2px 5px #9e8786;
 }
 
+.acceso-artista:hover {
+  box-shadow: 1px 2px 5px #9e8786;
+}
+
+@keyframes show-obras {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 .contacto-main .contacto {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 24px;
+  gap: 24px;
+}
+.contacto-main .contacto p {
+  text-align: justify;
+  max-width: 60ch;
+}
+.contacto-main .contacto-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-around;
+}
+.contacto-main .contacto-redes .bi {
+  color: #a4bfb8;
+}
+.contacto-main .contacto-form {
+  padding: 16px;
+  border: 1px solid #a4bfb8;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px #9e8786;
 }
 .contacto-main .contacto-form label {
   display: block;
-  padding: 16px 0 8px 0;
+  padding: 8px 0 4px 0;
 }
 .contacto-main .contacto-form input {
   border: 1px solid #a4bfb8;
   height: 32px;
-  min-width: 200px;
+  min-width: 80px;
   width: 100%;
 }
 .contacto-main .contacto-form textarea {
   border: 1px solid #a4bfb8;
-  min-width: 200px;
   width: 100%;
+  min-height: 124px;
 }
-.contacto-main .redes {
-  display: flex;
-  justify-content: space-around;
+.contacto-main .contacto-form-button {
+  background-color: #a4bfb8;
+  border: 1px solid #dcf2e4;
+  color: #fcfcfc;
+  margin-top: 8px;
+}
+
+.contacto-carpincho {
+  width: 250px;
+  margin-left: 70vw;
+  margin-bottom: 0px;
+  transform: rotate(50deg, 90deg);
+  animation: movimiento 3s ease-in-out, salto 1s ease 4;
+}
+
+@media (min-width: 800px) {
+  .nav {
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+  .nav-carpincho {
+    display: block;
+    width: 80px;
+    justify-self: center;
+  }
+  .nav-menu-icon {
+    display: none;
+  }
+  .nav-menu {
+    border: none;
+    border-radius: 0;
+    background-color: inherit;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    position: relative;
+    top: 0;
+    right: 0;
+    align-self: start;
+    margin-right: 1em;
+  }
+  .nav-menu-item {
+    padding: 8px;
+  }
+  .nav-menu-item a {
+    background-color: transparent;
+  }
+  .nav .nav-artistas {
+    display: none;
+    font-size: 1rem;
+    padding: 8px;
+    flex-direction: column;
+    position: absolute;
+    gap: 8px;
+    background-color: #f2a099;
+    border: 1px solid #f2c2c2;
+    border-radius: 10%;
+  }
+  .nav .nav-artistas-item {
+    padding: 4px;
+  }
+  .active {
+    background-color: #f2c2c2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .nav-menu-item:hover, .nav-artistas-item:hover {
+    border-bottom: 3px solid #f2c2c2;
+  }
+  .nav-menu-artistas:hover .nav-artistas {
+    display: flex;
+  }
+  /* Fin Nav - Menú */
+  /* Fin Header*/
 }
 
 /*# sourceMappingURL=style.css.map */
