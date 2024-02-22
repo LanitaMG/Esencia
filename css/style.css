@@ -35,8 +35,9 @@ h1 {
   font-size: 2em;
   padding: 16px;
   font-weight: 500;
-  text-shadow: 2px 2px #f2c2c2;
+  text-shadow: 1px 2px #f2c2c2;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 h2 {
@@ -56,9 +57,14 @@ h3 {
   text-align: center;
 }
 
+p {
+  font-family: Montserrat, sans-serif;
+}
+
 .nav {
   background-color: #f2a099;
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   padding: 8px 0;
 }
@@ -80,7 +86,6 @@ h3 {
 .nav-menu-box {
   display: flex;
   justify-content: end;
-  align-items: center;
   position: relative;
 }
 .nav-menu-icon {
@@ -95,17 +100,16 @@ h3 {
   padding: 1em;
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 16px;
   position: absolute;
   top: 2.5em;
   right: 1em;
-}
-.nav-menu-item {
-  padding: 8px 0;
+  z-index: 100;
 }
 .nav-menu .nav-artistas-item {
   font-size: 0.9rem;
-  padding: 4px;
+  padding: 8px;
+  font-weight: 500;
 }
 
 .nav-menu-box:hover .nav-menu {
@@ -140,7 +144,7 @@ h3 {
 }
 
 /* Fin Footer */
-/* Index - Main */
+/* Index */
 .index-main {
   background-image: url(../assets/fondoRamas.png);
   background-size: cover;
@@ -162,7 +166,6 @@ h3 {
 }
 .index-main-img {
   max-width: 300px;
-  transition-duration: 1s;
 }
 
 .index-main-img:hover {
@@ -171,7 +174,6 @@ h3 {
 }
 
 /* fin Index-Main */
-/* Index - Nuestros Artistas */
 .artistas {
   background-image: url(../assets/FondoMadera.jpg);
   background-size: cover;
@@ -206,7 +208,6 @@ h3 {
 }
 
 /* fin Index Nuestros Artistas */
-/* index Nuestra Esencia */
 .index-esencia {
   text-align: center;
   padding: 24px;
@@ -215,7 +216,7 @@ h3 {
   max-width: 80ch;
   margin: 0 auto;
 }
-.index-esencia p {
+.index-esencia .esencia-text-box p {
   padding: 8px 0;
 }
 
@@ -242,14 +243,24 @@ h3 {
 }
 .artista-main .artista-datos {
   padding-bottom: 24px;
+  background-color: rgba(164, 191, 184, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(164, 191, 184, 0.1);
 }
 .artista-main .artista-datos-nombre {
   padding: 24px;
 }
-.artista-main .artista-datos-contacto p {
+.artista-main .artista-datos-contacto span {
+  color: #a4bfb8;
+  font-size: larger;
+}
+.artista-main .artista-datos-contacto li {
   padding: 4px;
 }
 
+/* Fin Artista Main - Foto + Datos */
 .artista-descripcion {
   padding: 24px;
 }
@@ -260,9 +271,10 @@ h3 {
   padding: 8px;
 }
 
+/* Fin Artista descripción */
 .obras {
   margin: 0 auto;
-  padding: 24px;
+  padding: 24px 0;
   max-width: 1200px;
   text-align: center;
 }
@@ -310,6 +322,17 @@ h3 {
   bottom: 0;
 }
 
+@keyframes show-obras {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+/* Fin Galería de obras */
 .acceso {
   padding: 64px 24px 24px 24px;
   text-align: center;
@@ -340,22 +363,24 @@ h3 {
   box-shadow: 1px 2px 5px #9e8786;
 }
 
-@keyframes show-obras {
-  from {
-    opacity: 0;
-    scale: 25%;
-  }
-  to {
-    opacity: 1;
-    scale: 100%;
-  }
-}
+/* Fin Acceso a otros artistas */
+/* Fin Página Artistas */
+/* Página Contacto */
 .contacto-main .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 24px;
   gap: 24px;
+}
+.contacto-main .contacto-img {
+  border-radius: 100%;
+  box-shadow: 1px 2px 5px #9e8786;
+  max-width: 250px;
+}
+.contacto-main .contacto-img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 .contacto-main .contacto p {
   text-align: justify;
@@ -371,16 +396,20 @@ h3 {
   color: #a4bfb8;
 }
 .contacto-main .contacto-form {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
+  background-color: #fcfcfc;
   border: 1px solid #a4bfb8;
   border-radius: 5px;
   box-shadow: 1px 2px 5px #9e8786;
+  min-width: 300px;
 }
 .contacto-main .contacto-form label {
   display: block;
   padding: 8px 0 4px 0;
 }
-.contacto-main .contacto-form input {
+.contacto-main .contacto-form input:not(.button) {
   border: 1px solid #a4bfb8;
   height: 32px;
   min-width: 80px;
@@ -391,21 +420,16 @@ h3 {
   width: 100%;
   min-height: 124px;
 }
-.contacto-main .contacto-form-button {
+.contacto-main .contacto-form .button {
+  height: 32px;
   background-color: #a4bfb8;
-  border: 1px solid #dcf2e4;
-  color: #fcfcfc;
-  margin-top: 8px;
+  border: none;
+  box-shadow: 1px 2px 5px #9e8786;
+  margin: 16px auto 8px auto;
+  width: 50%;
 }
 
-.contacto-carpincho {
-  width: 250px;
-  margin-left: 70vw;
-  margin-bottom: 0px;
-  transform: rotate(50deg, 90deg);
-  animation: movimiento 3s ease-in-out, salto 1s ease 4;
-}
-
+/* Fin Página Contacto */
 @media (min-width: 800px) {
   .nav {
     grid-template-columns: 3fr 1fr 3fr;
@@ -431,6 +455,7 @@ h3 {
     right: 0;
     align-self: start;
     margin-right: 1em;
+    font-weight: 500;
   }
   .nav-menu-item {
     padding: 8px;

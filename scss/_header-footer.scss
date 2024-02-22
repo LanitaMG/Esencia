@@ -5,6 +5,7 @@
 .nav {
   background-color: $primary-color;
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   padding: 8px 0;
 
@@ -16,6 +17,7 @@
     text-align: center;
     float: left;
     margin-left: 1em;
+    
 
     &-marca {
       font-family: $title-font;
@@ -41,7 +43,6 @@
   &-menu-box {
     display: flex;
     justify-content: end;
-    align-items: center;
     position: relative;
   }
 
@@ -58,19 +59,22 @@
     padding: 1em;
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 16px;
     position: absolute;
     top: 2.5em;
     right: 1em;
+    z-index: 100;
     // display: none;
 
     &-item {
-      padding: 8px 0;
+      // padding: 8px 0;
     }
 
     .nav-artistas-item {
       font-size: 0.9rem;
-      padding: 4px;
+      padding: 8px;
+      // text-shadow: 1px 1px $shadow-colo;
+      font-weight: 500;
     }
   }
 }

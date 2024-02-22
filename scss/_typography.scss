@@ -3,7 +3,7 @@
     font-size: map-get($map: $h1-font, $key: size);
     padding: map-get($map: $h1-font, $key: padding);
     font-weight: 500;
-    text-shadow: 2px 2px $primary-color-light;
+    text-shadow: 1px 2px $primary-color-light;
 }
 
 @mixin titulo-secundario {
@@ -24,6 +24,7 @@
 h1 {
     @include titulo-principal();
     text-align: center;
+    letter-spacing: 2px;
     
 }
 
@@ -36,3 +37,8 @@ h3 {
     @include subtitulo();
     text-align: center;
 }
+
+p {
+    font-family: $paragraph-font;
+}
+

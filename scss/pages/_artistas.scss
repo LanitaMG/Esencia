@@ -1,5 +1,8 @@
 /* Páginas artistas */
 
+// **************************
+// * Artista - Foto + datos *
+// **************************
 .artista-main {
     background-image: url(../assets/fondoHojas.png);
     background-size: cover;
@@ -12,34 +15,46 @@
         align-items: center;
         gap: 24px;
         text-align: center;
-
+               
         &-img {
             max-width: 350px;
             min-width: 250px;
             border-radius: 100%;
-            box-shadow: 2px 2px 10px $shadow-color;
+            box-shadow: 2px 2px 10px $shadow-color;    
         }
-
+        
         &-datos {
             padding-bottom: 24px;
+            background-color: rgba($secondary-color, .10);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1.5px solid rgba($secondary-color, .10);
 
             &-nombre {
-                padding: 24px;       
+                padding: 24px;
             }
 
             &-contacto {
 
-                p {
+                span {
+                    color: $secondary-color;
+                    font-size: larger;
+                }
+
+                li {
                     padding: 4px;
                 }
             }
         }
-
-        
-
     }
-
 }
+/* Fin Artista Main - Foto + Datos */
+
+
+// *************************
+// * Artista - Descripción *
+// *************************
 
 .artista-descripcion {
     padding: 24px;
@@ -51,14 +66,19 @@
         padding: 8px;
     }
 }
+/* Fin Artista descripción */
 
+
+// ********************
+// * Galería de obras *
+// ********************
 
 .obras {
     margin: 0 auto;
-    padding: 24px;
+    padding: 24px 0;
     max-width: 1200px;
     text-align: center;
-    
+
     &-container {
         display: flex;
         flex-wrap: wrap;
@@ -67,10 +87,6 @@
         background: radial-gradient($grey-light, $grey, $secondary-color);
         padding: 32px 0;
         border-radius: 16px;
-        
-
-
-
     }
 
     .obra {
@@ -102,8 +118,6 @@
             opacity: 0;
             border-radius: 8px;
             transition: all 0.5 ease-in-out;
-
-
         }
     }
 
@@ -114,10 +128,27 @@
     }
 }
 
+@keyframes show-obras {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+/* Fin Galería de obras */
+
+// ****************************
+// * Enlaces a otros artistas *
+// ****************************
+
 .acceso {
     padding: 64px 24px 24px 24px;
     text-align: center;
-
 
     &-box {
         margin: 0 auto;
@@ -129,10 +160,10 @@
         justify-content: space-around;
         gap: 24px;
     }
-    
+
     &-artista {
         max-width: 200px;
-        padding: 16px;        
+        padding: 16px;
         border-top-left-radius: 30%;
         border-top-right-radius: 30%;
 
@@ -146,16 +177,9 @@
 
 .acceso-artista:hover {
     box-shadow: 1px 2px 5px $shadow-color;
-
 }
 
-@keyframes show-obras {
-    from {
-        opacity: 0;
-        scale: 25%;
-    }
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
+/* Fin Acceso a otros artistas */
+
+/* Fin Página Artistas */
+
