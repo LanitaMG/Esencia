@@ -4,7 +4,10 @@
 // * Contacto *
 // ************
 .contacto-main {
-
+        background-image: url(../assets/fondoRamas.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        
     .contacto {
         display: flex;
         flex-direction: column;
@@ -23,10 +26,7 @@
             transition-duration: 1s;
         }
 
-        p {
-            text-align: justify;
-            max-width: 60ch;
-        }
+
 
         // ******************
         // * Redes sociales *

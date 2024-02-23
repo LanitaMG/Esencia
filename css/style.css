@@ -59,6 +59,9 @@ h3 {
 
 p {
   font-family: Montserrat, sans-serif;
+  text-wrap: balance;
+  text-align: center;
+  max-width: 80ch;
 }
 
 .nav {
@@ -109,7 +112,6 @@ p {
 .nav-menu .nav-artistas-item {
   font-size: 0.9rem;
   padding: 8px;
-  font-weight: 500;
 }
 
 .nav-menu-box:hover .nav-menu {
@@ -239,7 +241,6 @@ p {
   border-radius: 24px;
   background-color: rgba(164, 191, 184, 0.15);
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(5px);
   border: 1.5px solid rgba(164, 191, 184, 0.1);
 }
 .artista-main .artista-img {
@@ -266,14 +267,12 @@ p {
   padding: 4px;
 }
 
-/* Fin Artista Main - Foto + Datos */
+/* Fin Artista Main Card */
 .artista-descripcion {
   padding: 24px;
 }
 .artista-descripcion p {
-  text-align: center;
   margin: 0 auto;
-  max-width: 80ch;
   padding: 8px;
 }
 
@@ -281,7 +280,7 @@ p {
 .obras {
   margin: 0 auto;
   padding: 24px 0;
-  max-width: 1200px;
+  max-width: 100%;
   text-align: center;
 }
 .obras-container {
@@ -372,6 +371,11 @@ p {
 /* Fin Acceso a otros artistas */
 /* Fin Página Artistas */
 /* Página Contacto */
+.contacto-main {
+  background-image: url(../assets/fondoRamas.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .contacto-main .contacto {
   display: flex;
   flex-direction: column;
@@ -387,10 +391,6 @@ p {
 .contacto-main .contacto-img:hover {
   transform: rotate(360deg);
   transition-duration: 1s;
-}
-.contacto-main .contacto p {
-  text-align: justify;
-  max-width: 60ch;
 }
 .contacto-main .contacto-redes {
   display: flex;
@@ -486,7 +486,7 @@ p {
   .active {
     background-color: #f2c2c2;
     border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
   .nav-menu-item:hover,
   .nav-artistas-item:hover {
@@ -497,44 +497,31 @@ p {
   }
   /* Fin Nav - Menú */
   /* Fin Header*/
+  /* Página Artistas */
   .artista-main .artista {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     width: max-content;
     min-width: 600px;
     max-width: 800px;
     padding: 24px;
     margin: 0 auto;
-    border-radius: 24px;
-    background-color: rgba(164, 191, 184, 0.15);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1.5px solid rgba(164, 191, 184, 0.1);
   }
   .artista-main .artista-img {
     max-width: 300px;
-    object-fit: cover;
     margin: 0 0 0 -80px;
-    border-radius: 34px;
-    box-shadow: 1px 2px 5px #9e8786;
+    border-radius: 24px;
   }
   .artista-main .artista-datos {
     padding: 0 24px 0 24px;
     text-align: start;
   }
-  .artista-main .artista-datos-nombre {
-    padding: 0;
+  .obras {
+    padding: 24px;
+    max-width: 70vw;
   }
-  .artista-main .artista-datos-contacto {
-    padding-top: 16px;
-  }
-  .artista-main .artista-datos-contacto span {
-    color: #a4bfb8;
-    font-size: larger;
-  }
-  .artista-main .artista-datos-contacto li {
-    padding: 4px;
+  .contacto-main {
+    background-size: cover;
+    background-position: bottom;
   }
 }
 

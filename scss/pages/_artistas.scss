@@ -1,7 +1,7 @@
 /* Páginas artistas */
 
 // **************************
-// * Artista - Foto + datos *
+// * Artista  Card *
 // **************************
 .artista-main {
     background-image: url(../assets/fondoHojas.png);
@@ -20,12 +20,10 @@
         border-radius: 24px;
         background-color: rgba($secondary-color, .15);
         backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(5px);
         border: 1.5px solid rgba($secondary-color, .10);
                
         &-img {
             max-width: 100%;
-            // min-width: 250px;
             object-fit: cover;
             margin: -100px 0 30px 0;
             border-radius: 100%;
@@ -53,7 +51,7 @@
         }
     }
 }
-/* Fin Artista Main - Foto + Datos */
+/* Fin Artista Main Card */
 
 
 // *************************
@@ -64,9 +62,7 @@
     padding: 24px;
 
     p {
-        text-align: center;
         margin: 0 auto;
-        max-width: 80ch;
         padding: 8px;
     }
 }
@@ -80,7 +76,7 @@
 .obras {
     margin: 0 auto;
     padding: 24px 0;
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
 
     &-container {
