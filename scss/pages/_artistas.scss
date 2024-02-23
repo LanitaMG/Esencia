@@ -6,37 +6,41 @@
 .artista-main {
     background-image: url(../assets/fondoHojas.png);
     background-size: cover;
-    padding: 48px;
+    padding: 48px 24px;
 
     .artista {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        gap: 24px;
         text-align: center;
+        min-width: 300px;
+        max-width: 450px;
+        padding: 24px;
+        margin: 80px auto 0 auto;
+        border-radius: 24px;
+        background-color: rgba($secondary-color, .15);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1.5px solid rgba($secondary-color, .10);
                
         &-img {
-            max-width: 350px;
-            min-width: 250px;
+            max-width: 100%;
+            // min-width: 250px;
+            object-fit: cover;
+            margin: -100px 0 30px 0;
             border-radius: 100%;
-            box-shadow: 2px 2px 10px $shadow-color;    
+            box-shadow: 1px 2px 5px $shadow-color;
         }
         
         &-datos {
             padding-bottom: 24px;
-            background-color: rgba($secondary-color, .10);
-            backdrop-filter: blur(3px);
-            -webkit-backdrop-filter: blur(5px);
-            border-radius: 10px;
-            border: 1.5px solid rgba($secondary-color, .10);
 
             &-nombre {
-                padding: 24px;
+                padding: 0;
             }
 
             &-contacto {
-
+                padding-top: 16px;
                 span {
                     color: $secondary-color;
                     font-size: larger;
