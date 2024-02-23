@@ -1,137 +1,147 @@
 @media (min-width: 800px) {
-    //
-    //* Header *
-    //
+  //
+  //* Header *
+  //
 
-    .nav {
-        grid-template-columns: 3fr 1fr 3fr;
+  .nav {
+    grid-template-columns: 3fr 1fr 3fr;
 
-        // **************
-        // * Nav - Logo *
-        // **************
-        //Sin modificaciones
+    // **************
+    // * Nav - Logo *
+    // **************
+    //Sin modificaciones
 
-        // *******************
-        // * Nav - Carpincho *
-        // *******************
-        &-carpincho {
-            display: block;
-            width: 80px;
-            justify-self: center;
-        }
-
-        // **************
-        // * Nav - Menú *
-        // **************
-
-        &-menu-icon {
-            display: none;
-        }
-
-        &-menu {
-            border: none;
-            border-radius: 0;
-            background-color: inherit;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            gap: 32px;
-            position: relative;
-            top: 0;
-            right: 0;
-            align-self: start;
-            margin-right: 1em;
-            font-weight: 500;
-
-            &-item {
-                padding: 8px;
-
-                a {
-                    background-color: transparent;
-                }
-            }
-        }
-
-        .nav-artistas {
-            display: none;
-            font-size: 1rem;
-            padding: 8px;
-            flex-direction: column;
-            position: absolute;
-            gap: 8px;
-            background-color: $primary-color;
-            border: 1px solid $primary-color-light;
-            border-radius: 10%;
-
-
-            &-item {
-                padding: 4px;
-
-            }
-        }
+    // *******************
+    // * Nav - Carpincho *
+    // *******************
+    &-carpincho {
+      display: block;
+      width: 80px;
+      justify-self: center;
     }
 
-    .active {
-        background-color: $primary-color-light;
-        border-top-left-radius: 50%;
-        border-bottom-right-radius: 50%;
+    // **************
+    // * Nav - Menú *
+    // **************
+
+    &-menu-icon {
+      display: none;
     }
 
-    .nav-menu-item:hover,
-    .nav-artistas-item:hover {
-        border-bottom: 3px solid $primary-color-light;
-    }
+    &-menu {
+      border: none;
+      border-radius: 0;
+      background-color: inherit;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      position: relative;
+      top: 0;
+      right: 0;
+      align-self: start;
+      margin-right: 1em;
+      font-weight: 500;
 
-    .nav-menu-artistas:hover .nav-artistas {
-        display: flex;
-    }
+      &-item {
+        padding: 8px;
+        margin: 0 auto;
 
-    /* Fin Nav - Menú */
-    /* Fin Header*/
-
-    /* Página Artistas */
-
-    // **************************
-    // * Artista - Foto + datos *
-    // **************************
-    .artista-main {
-
-        .artista {
-            flex-direction: row;
-            width: max-content;
-            min-width: 600px;
-            max-width: 800px;
-            padding: 24px;
-            margin: 0 auto;
-
-            &-img {
-                max-width: 300px;
-                margin: 0 0 0 -80px;
-                border-radius: 24px;
-            }
-
-            &-datos {
-                padding: 0 24px 0 24px;
-                text-align: start;
-
-            }
+        a {
+          background-color: transparent;
         }
+      }
     }
 
-        // ********************
-        // * Galería de obras *
-        // ********************
-    
-        .obras {
-            padding: 24px;
-            max-width: 70vw;
+    .nav-artistas {
+      display: none;
+      font-size: 1rem;
+      padding: 8px;
+      flex-direction: column;
+      position: absolute;
+      gap: 8px;
+      background-color: $primary-color;
+      border: 1px solid $primary-color-light;
+      border-radius: 10%;
+      width:max-content;
 
-        
-        }
-
-        .contacto-main {
-
-            background-size: cover;
-            background-position: bottom;
-        }
+      &-item {
+        padding: 4px;
+      }
     }
+  }
+
+  .active {
+    background-color: $primary-color-light;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .nav-menu-item,
+  .nav-artistas-item {
+    position: relative;
+  }
+
+  .nav-menu-item:not(.active):hover::before,
+  .nav-artistas-item:not(.active):hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom: 3px solid $primary-color-light;
+    width: 100%;
+  }
+
+  .nav-menu-artistas:hover .nav-artistas {
+    display: flex;
+  }
+
+  /* Fin Nav - Menú */
+  /* Fin Header*/
+
+  /* Página Artistas */
+
+  // **************************
+  // * Artista - Foto + datos *
+  // **************************
+  .artista-main {
+    .artista {
+      flex-direction: row;
+      width: max-content;
+      min-width: 600px;
+      max-width: 800px;
+      padding: 24px;
+      margin: 0 auto;
+      position: relative;
+      left: 40px;
+
+      &-img {
+        max-width: 300px;
+        margin: 0 0 0 -80px;
+        border-radius: 24px;
+      }
+
+      &-datos {
+        padding: 0 24px 0 24px;
+        text-align: start;
+      }
+    }
+  }
+
+  // ********************
+  // * Galería de obras *
+  // ********************
+
+  .obras-container {
+    width: 80vw;
+    padding: 32px;
+    margin: 0 auto;
+  }
+
+  .contacto-main {
+    background-size: cover;
+    background-position: bottom;
+  }
+}
