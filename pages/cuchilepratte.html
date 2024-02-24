@@ -1,197 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- favicon -->
-  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Esencia - Cuchi Lepratte</title>
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>Esencia - Cuchi Lepratte</title>
-</head>
-
-<body>
-  <!-- Encabezado -->
-  <header class="nav">
-    <div class="nav-logo-box">
-      <a class="nav-logo" href="../index.html">
-        <p class="nav-logo-marca">ESENCIA</span>
+  <body>
+    <!-- Encabezado -->
+    <header class="nav">
+      <div class="nav-logo-box">
+        <a class="nav-logo" href="../index.html">
+          <p class="nav-logo-marca">ESENCIA</p>
           <p class="nav-logo-slogan">Alma de bosque</p>
-      </a>
-    </div>
-    <!-- Carpincho - Visible solo en md -->
-    <img class="nav-carpincho" src="../assets/carpincho2.png" alt="Carpincho de madera" />
-    <!-- Encabezado - Menú -->
-    <div class="nav-menu-box">
-      <div>
-        <i class="bi bi-list nav-menu-icon"></i>
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-menu-item nav-menu-artistas active">Artistas
-            <ul class="nav-artistas">
-              <li class="nav-artistas-item"><a href="./luciagomez.html">Lucía Gómez</a></li>
-              <li class="nav-artistas-item"><a href="./cuchilepratte.html">Cuchi Lepratte</a></li>
-              <li class="nav-artistas-item"><a href="./pedrofernandez.html">Pedro Fernández</a></li>
-            </ul>
-          </li>
-          <li class="nav-menu-item">
-            <a class="" href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <!-- Fin Encabezado -->
-
-  <!-- Presentación Artista -->
-  <main class="artista-main">
-    <div class="artista">
-      <img src="../assets/artistaCuchiLepratte.png" class="artista-img" alt="Retrato de Cuchi Lepratte" />
-      <div class="artista-datos">
-        <h1 class="artista-datos-nombre">Cuchi Lepratte</h1>
-        <ul class="artista-datos-contacto">
-          <li><span class="bi bi-geo-alt"></span><a href="https://maps.app.goo.gl/GwyAcfz9L5PyWSr98" target="_blank">
-              Salsipuedes - Córdoba</a></li>
-          <li><span class="bi bi-instagram"></span><a href="http://www.instagram.com" target="_blank">
-              @cuchilepratte_arte</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </main>
-  <section class="artista-descripcion">
-    <p>
-      Cuchi, desde su Córdoba natal, se dedica a crear obras de arte utilizando restos de madera descartados de la
-      fabricación
-      de muebles.
-    </p>
-    <p>
-      Sus obras que reflejan su amor por la naturaleza, la fauna y flora autóctona. En su taller, además de maderas y
-      herramientas, encontrarás un vivero destinado a fomentar la plantacion de variedades locales para ayudar a
-      restablecer
-      el sistema ecológico local.
-    </p>
-  </section>
-
-  <!-- Galería de obras -->
-  <section class="obras">
-    <h2 class="">Obras</h2>
-    <div class="obras-container">
-      <div class="obra">
-        <img src="../assets/plato_01.png" alt="Carpincho" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Carpincho</h3>
-          <p>Una vieja mesa transformada en arte</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_02.png" alt="Hoja" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Hoja</h3>
-          <p>De ropero a bandeja para tus llaves</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_03.png" alt="Víbora" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Víbora</h3>
-          <p>Mesa de pino transformada en arte para tu pared</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_01.png" alt="Carpincho" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Carpincho</h3>
-          <p>Una vieja mesa transformada en arte</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_02.png" alt="Hoja" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Hoja</h3>
-          <p>De ropero a bandeja para tus llaves</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_03.png" alt="Víbora" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Víbora</h3>
-          <p>Mesa de pino transformada en arte para tu pared</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_01.png" alt="Carpincho" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Carpincho</h3>
-          <p>Una vieja mesa transformada en arte</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_02.png" alt="Hoja" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Hoja</h3>
-          <p>De ropero a bandeja para tus llaves</p>
-        </div>
-      </div>
-      <div class="obra">
-        <img src="../assets/plato_03.png" alt="Víbora" class="obra-img" />
-        <div class="obra-datos">
-          <h3>Víbora</h3>
-          <p>Mesa de pino transformada en arte para tu pared</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Acceso a otros artistas -->
-  <section class="acceso">
-    <p>Conoce también a estos artistas:</p>
-    <div class="acceso-box">
-      <div class="acceso-artista">
-        <a href="./luciagomez.html" class="">
-          <img src="../assets/artistaLuciaGomez.png" class="acceso-artista-img"
-            alt="Retrato de la artista Lucía Gómez" />
-          Lucía Gómez
         </a>
       </div>
-      <div class="acceso-artista">
-        <a href="./pedrofernandez.html" class="">
-          <img src="../assets/artistaPedroFernandez.png" class="acceso-artista-img"
-            alt="Retrato del artista Pedro Fernández" />
-          Pedro Fernández
-        </a>
+      <!-- Carpincho - Visible solo en md -->
+      <img
+        class="nav-carpincho"
+        src="../assets/carpincho2.png"
+        alt="Carpincho de madera"
+      />
+      <!-- Encabezado - Menú -->
+      <div class="nav-menu-box">
+        <div>
+          <i class="bi bi-list nav-menu-icon"></i>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-menu-item nav-menu-artistas active">
+              Artistas
+              <ul class="nav-artistas">
+                <li class="nav-artistas-item">
+                  <a href="./luciagomez.html">Lucía Gómez</a>
+                </li>
+                <li class="nav-artistas-item">
+                  <a href="./cuchilepratte.html">Cuchi Lepratte</a>
+                </li>
+                <li class="nav-artistas-item">
+                  <a href="./pedrofernandez.html">Pedro Fernández</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu-item">
+              <a class="" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
+    <!-- Fin Encabezado -->
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
-    <div class="footer-logo">
-      <a href="../index.html">
-        <p class="footer-logo-marca"> ESENCIA </p>
-        <p class="footer-logo-slogan">Alma de bosque</p>
-      </a>
+    <!-- Presentación Artista -->
+    <main class="artista-main">
+      <div class="artista">
+        <img
+          src="../assets/artistaCuchiLepratte.png"
+          class="artista-img"
+          alt="Retrato de Cuchi Lepratte"
+        />
+        <div class="artista-datos">
+          <h1 class="artista-datos-nombre">Cuchi Lepratte</h1>
+          <ul class="artista-datos-contacto">
+            <li>
+              <span class="bi bi-geo-alt"></span
+              ><a
+                href="https://maps.app.goo.gl/GwyAcfz9L5PyWSr98"
+                target="_blank"
+              >
+                Salsipuedes - Córdoba</a
+              >
+            </li>
+            <li>
+              <span class="bi bi-instagram"></span
+              ><a href="http://www.instagram.com" target="_blank">
+                @cuchilepratte_arte</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <section class="artista-descripcion">
       <p>
-        Las imágenes y los textos que ves en este sitio web fueron generados
-        mediante IA
+        Cuchi, desde su Córdoba natal, se dedica a crear obras de arte
+        utilizando restos de madera descartados de la fabricación de muebles.
       </p>
-    </div>
-  </footer>
+      <p>
+        Sus obras que reflejan su amor por la naturaleza, la fauna y flora
+        autóctona. En su taller, además de maderas y herramientas, encontrarás
+        un vivero destinado a fomentar la plantacion de variedades locales para
+        ayudar a restablecer el sistema ecológico local.
+      </p>
+    </section>
 
+    <!-- Galería de obras -->
+    <section class="obras">
+      <h2 class="">Obras</h2>
+      <div class="obras-container">
+        <div class="obra">
+          <img src="../assets/plato-01.png" alt="Carpincho" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Carpincho</h3>
+            <p>Una vieja mesa transformada en arte</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-02.png" alt="Hoja" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Hoja</h3>
+            <p>De ropero a bandeja para tus llaves</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-03.png" alt="Víbora" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Víbora</h3>
+            <p>Mesa de pino transformada en arte para tu pared</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-04.png" alt="Flor" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Flor</h3>
+            <p>Una vieja mesa transformada en arte</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-05.png" alt="Libélula" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Libélula</h3>
+            <p>De ropero a un cuadro para tu sala</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-06.png" alt="Caballo" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Caballo</h3>
+            <p>Mesa de pino transformada en arte para tu pared</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-07.png" alt="Palmera" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Palmera</h3>
+            <p>Una vieja mesa transformada en arte</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-08.png" alt="Hoja" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Hoja</h3>
+            <p>De ropero a bandeja para tus llaves</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-09.png" alt="GAto" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Gato</h3>
+            <p>Mesa de pino transformada en arte para tu pared</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-10.png" alt="Crisantemo" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Crisantemo</h3>
+            <p>Una vieja mesa transformada en arte</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-11.png" alt="Hoja" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Hoja</h3>
+            <p>De ropero a bandeja para tus llaves</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/plato-12.png" alt="Víbora" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Víbora</h3>
+            <p>Mesa de pino transformada en arte para tu pared</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Acceso a otros artistas -->
+    <section class="acceso">
+      <p>Conoce también a estos artistas:</p>
+      <div class="acceso-box">
+        <div class="acceso-artista">
+          <a href="./luciagomez.html" class="">
+            <img
+              src="../assets/artistaLuciaGomez.png"
+              class="acceso-artista-img"
+              alt="Retrato de la artista Lucía Gómez"
+            />
+            Lucía Gómez
+          </a>
+        </div>
+        <div class="acceso-artista">
+          <a href="./pedrofernandez.html" class="">
+            <img
+              src="../assets/artistaPedroFernandez.png"
+              class="acceso-artista-img"
+              alt="Retrato del artista Pedro Fernández"
+            />
+            Pedro Fernández
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div
+        class="footer-arboleda"
+        src="./assets/arboles.png"
+        alt="Arboleda"
+      ></div>
+      <div class="footer-logo">
+        <a href="../index.html">
+          <p class="footer-logo-marca">ESENCIA</p>
+          <p class="footer-logo-slogan">Alma de bosque</p>
+        </a>
+        <p>
+          Las imágenes y los textos que ves en este sitio web fueron generados
+          mediante IA
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
