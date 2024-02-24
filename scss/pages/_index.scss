@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: bottom;
     text-align: center;
-    padding: 48px;
+    padding: 2em;
 
     &-marca {
         background-color: white;
@@ -21,8 +21,8 @@
 
     &-slogan {
         font-family: $title-font;
-        font-size: 1.2rem;
-        padding: 8px;
+        font-size: 1.2em;
+        padding: 0.5em;
     }
 
     &-img {
@@ -50,17 +50,19 @@
     background-attachment: fixed;
     background-position: center;
     text-align: center;
-    padding: 24px;
+    padding: 2em;
 
     .artistas-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 16px;
-        padding: 16px;
+        gap: 1em;
+        padding: 1em;
+        max-width: 1400px;
+        margin: 0 auto;
 
         .artista {
-            padding: 16px;
+            padding: 1em;
             border: 1px solid $grey-light;
             background-color: rgba($grey-light, 0.5);
             border-top-left-radius: 30%;
@@ -88,18 +90,7 @@
 
 .index-esencia {
     text-align: center;
-    padding: 24px;
-    
-    .esencia-text-box {
-        max-width: 80ch;
-        margin: 0 auto;
-        
-
-        p {
-            padding: 8px 0;
-        }
-    }
-
+    padding: 2em;
 }
 
 /* fin Index - Nuestra esencia */

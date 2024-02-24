@@ -6,7 +6,7 @@
 .artista-main {
     background-image: url(../assets/fondoHojas.png);
     background-size: cover;
-    padding: 48px 24px;
+    padding: 2em;
 
     .artista {
         display: flex;
@@ -15,7 +15,7 @@
         text-align: center;
         min-width: 300px;
         max-width: 450px;
-        padding: 24px;
+        padding: 1em;
         margin: 80px auto 0 auto;
         border-radius: 24px;
         background-color: rgba($secondary-color, .15);
@@ -31,21 +31,21 @@
         }
         
         &-datos {
-            padding-bottom: 24px;
+            padding-bottom: 1em;
 
             &-nombre {
                 padding: 0;
             }
 
             &-contacto {
-                padding-top: 16px;
+                padding-top: 1em;
                 span {
                     color: $secondary-color;
-                    font-size: larger;
+                    font-size: 1.2em;
                 }
 
                 li {
-                    padding: 4px;
+                    padding: 0.5em;
                 }
             }
         }
@@ -59,11 +59,10 @@
 // *************************
 
 .artista-descripcion {
-    padding: 24px;
+    padding: 2em;
 
     p {
-        margin: 0 auto;
-        padding: 8px;
+          padding: 8px;
     }
 }
 /* Fin Artista descripción */
@@ -75,8 +74,8 @@
 
 .obras {
     margin: 0 auto;
-    padding: 24px 0;
-    max-width: 100%;
+    padding: 2em 0;
+    width: 100%;
     text-align: center;
 
     &-container {
@@ -112,7 +111,7 @@
             background-color: rgba($primary-color, 0.7);
             position: absolute;
             bottom: -15px;
-            padding: 8px;
+            padding: 0.5em;
             color: $grey-light;
             display: block;
             opacity: 0;
@@ -125,6 +124,7 @@
         opacity: 1;
         display: block;
         bottom: 0;
+        transition-duration: 0.5s;
     }
 }
 
@@ -147,23 +147,23 @@
 // ****************************
 
 .acceso {
-    padding: 64px 24px 24px 24px;
+    padding: 2em;
     text-align: center;
 
     &-box {
         margin: 0 auto;
-        padding: 24px;
+        padding: 1em;
         min-width: 300px;
         max-width: 600px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 24px;
+        gap: 1em;
     }
 
     &-artista {
         max-width: 200px;
-        padding: 16px;
+        padding: 1em;
         border-top-left-radius: 30%;
         border-top-right-radius: 30%;
 

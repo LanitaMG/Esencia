@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   //
   //* Header *
   //
@@ -64,6 +64,8 @@
       border: 1px solid $primary-color-light;
       border-radius: 10%;
       width:max-content;
+    //   top: 2.5em;
+
 
       &-item {
         padding: 4px;

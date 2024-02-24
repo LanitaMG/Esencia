@@ -70,7 +70,7 @@ p {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  padding: 8px 0;
+  padding: 1em;
 }
 .nav-logo {
   text-align: center;
@@ -79,7 +79,7 @@ p {
 }
 .nav-logo-marca {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .nav-logo-slogan {
   font-family: "Montserrat Alternates", sans-serif;
@@ -90,11 +90,15 @@ p {
 .nav-menu-box {
   display: flex;
   justify-content: end;
+  width: 100%;
+}
+.nav-menu-box > div {
+  width: max-content;
   position: relative;
+  margin-right: 1em;
 }
 .nav-menu-icon {
-  font-size: 24px;
-  margin-right: 1em;
+  font-size: 2.5em;
   cursor: pointer;
 }
 .nav-menu {
@@ -104,18 +108,19 @@ p {
   padding: 1em;
   display: none;
   flex-direction: column;
-  gap: 16px;
+  gap: 1em;
   position: absolute;
-  top: 2.5em;
+  top: 1.5em;
   right: 1em;
   z-index: 100;
+  width: max-content;
 }
 .nav-menu .nav-artistas-item {
-  font-size: 0.9rem;
-  padding: 8px;
+  font-size: 0.9em;
+  padding: 0.5em;
 }
 
-.nav-menu-box:hover .nav-menu {
+.nav-menu-box > div:hover .nav-menu {
   display: flex;
 }
 
@@ -124,26 +129,26 @@ p {
   text-align: center;
 }
 .footer-arboleda {
-  height: 150px;
+  height: 10em;
   background-image: url(../assets/arboles.png);
   background-size: contain;
   background-repeat: repeat;
 }
 .footer-logo {
   background: linear-gradient(to bottom right, #f2c2c2, #f2a099);
-  padding: 8px;
+  padding: 1em;
   /* Fin Footer - Logo */
 }
 .footer-logo-marca {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .footer-logo-slogan {
   font-family: "Montserrat Alternates", sans-serif;
 }
 .footer-logo > p {
-  font-size: small;
-  padding: 8px;
+  font-size: 0.8em;
+  padding-top: 0.5em;
 }
 
 /* Fin Footer */
@@ -153,7 +158,7 @@ p {
   background-size: cover;
   background-position: bottom;
   text-align: center;
-  padding: 48px;
+  padding: 2em;
 }
 .index-main-marca {
   background-color: white;
@@ -164,8 +169,8 @@ p {
 }
 .index-main-slogan {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.2rem;
-  padding: 8px;
+  font-size: 1.2em;
+  padding: 0.5em;
 }
 .index-main-img {
   max-width: 300px;
@@ -183,17 +188,19 @@ p {
   background-attachment: fixed;
   background-position: center;
   text-align: center;
-  padding: 24px;
+  padding: 2em;
 }
 .artistas .artistas-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 16px;
-  padding: 16px;
+  gap: 1em;
+  padding: 1em;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .artistas .artistas-container .artista {
-  padding: 16px;
+  padding: 1em;
   border: 1px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.5);
   border-top-left-radius: 30%;
@@ -213,14 +220,7 @@ p {
 /* fin Index Nuestros Artistas */
 .index-esencia {
   text-align: center;
-  padding: 24px;
-}
-.index-esencia .esencia-text-box {
-  max-width: 80ch;
-  margin: 0 auto;
-}
-.index-esencia .esencia-text-box p {
-  padding: 8px 0;
+  padding: 2em;
 }
 
 /* fin Index - Nuestra esencia */
@@ -228,7 +228,7 @@ p {
 .artista-main {
   background-image: url(../assets/fondoHojas.png);
   background-size: cover;
-  padding: 48px 24px;
+  padding: 2em;
 }
 .artista-main .artista {
   display: flex;
@@ -237,7 +237,7 @@ p {
   text-align: center;
   min-width: 300px;
   max-width: 450px;
-  padding: 24px;
+  padding: 1em;
   margin: 80px auto 0 auto;
   border-radius: 24px;
   background-color: rgba(164, 191, 184, 0.15);
@@ -252,36 +252,35 @@ p {
   box-shadow: 1px 2px 5px #9e8786;
 }
 .artista-main .artista-datos {
-  padding-bottom: 24px;
+  padding-bottom: 1em;
 }
 .artista-main .artista-datos-nombre {
   padding: 0;
 }
 .artista-main .artista-datos-contacto {
-  padding-top: 16px;
+  padding-top: 1em;
 }
 .artista-main .artista-datos-contacto span {
   color: #a4bfb8;
-  font-size: larger;
+  font-size: 1.2em;
 }
 .artista-main .artista-datos-contacto li {
-  padding: 4px;
+  padding: 0.5em;
 }
 
 /* Fin Artista Main Card */
 .artista-descripcion {
-  padding: 24px;
+  padding: 2em;
 }
 .artista-descripcion p {
-  margin: 0 auto;
   padding: 8px;
 }
 
 /* Fin Artista descripción */
 .obras {
   margin: 0 auto;
-  padding: 24px 0;
-  max-width: 100%;
+  padding: 2em 0;
+  width: 100%;
   text-align: center;
 }
 .obras-container {
@@ -315,7 +314,7 @@ p {
   background-color: rgba(242, 160, 153, 0.7);
   position: absolute;
   bottom: -15px;
-  padding: 8px;
+  padding: 0.5em;
   color: #fcfcfc;
   display: block;
   opacity: 0;
@@ -326,6 +325,7 @@ p {
   opacity: 1;
   display: block;
   bottom: 0;
+  transition-duration: 0.5s;
 }
 
 @keyframes show-obras {
@@ -340,22 +340,22 @@ p {
 }
 /* Fin Galería de obras */
 .acceso {
-  padding: 64px 24px 24px 24px;
+  padding: 2em;
   text-align: center;
 }
 .acceso-box {
   margin: 0 auto;
-  padding: 24px;
+  padding: 1em;
   min-width: 300px;
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 24px;
+  gap: 1em;
 }
 .acceso-artista {
   max-width: 200px;
-  padding: 16px;
+  padding: 1em;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
 }
@@ -376,13 +376,14 @@ p {
   background-image: url(../assets/fondoRamas.png);
   background-size: contain;
   background-repeat: no-repeat;
+  padding: 2em;
 }
 .contacto-main .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  gap: 24px;
+  padding: 1em;
+  gap: 2em;
 }
 .contacto-main .contacto-img {
   border-radius: 100%;
@@ -437,7 +438,7 @@ p {
 }
 
 /* Fin Página Contacto */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .nav {
     grid-template-columns: 3fr 1fr 3fr;
   }
