@@ -18,7 +18,7 @@
 
         &-img {
             border-radius: 100%;
-            box-shadow: 1px 2px 5px $shadow-color;
+            @extend %box-shadow;
             max-width: 250px;
         }
 
@@ -55,7 +55,7 @@
             background-color: $grey-light;
             border: 1px solid $secondary-color;
             border-radius: 5px;
-            box-shadow: 1px 2px 5px $shadow-color ;
+            @extend %box-shadow;
             min-width: 300px;
 
             label {
@@ -80,7 +80,7 @@
                 height: 32px;
                 background-color: $secondary-color;
                 border: none;
-                box-shadow: 1px 2px 5px $shadow-color;
+                @extend %box-shadow;
                 margin: 16px auto 8px auto;
                 width: 50%;
             }

@@ -2,6 +2,11 @@
 /* Variables */
 /* Colores */
 /* Fuentes */
+/* Sombras */
+.contacto-main .contacto-form .button, .contacto-main .contacto-form, .contacto-main .contacto-img, .acceso-artista:hover, .acceso-artista-img, .obras .obra-img, .artista-main .artista-img, .artistas .artista:hover, .artistas .artistas-container .artista-img {
+  box-shadow: 1px 2px 5px #9e8786;
+}
+
 /* fin variables */
 /* REset */
 * {
@@ -33,36 +38,39 @@ img {
 h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 2em;
-  padding: 16px;
-  font-weight: 500;
-  text-shadow: 1px 2px #f2c2c2;
-  text-align: center;
   letter-spacing: 2px;
+  font-weight: 500;
+  text-shadow: 1px 2px 5px #f2a099;
+  padding: 0.5em 1em;
 }
 
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5em;
-  padding: 16px;
-  font-weight: normal;
-  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0.5em;
 }
 
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.2em;
-  padding: 8px;
-  font-weight: normal;
-  text-shadow: 1px 1px #a4bfb8;
-  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0.5em;
+  text-shadow: 1px 2px 5px #a4bfb8;
 }
 
 p {
   font-family: Montserrat, sans-serif;
-  text-wrap: balance;
-  text-align: center;
+  font-size: 1em;
+  letter-spacing: 0;
+  font-weight: normal;
   max-width: 80ch;
-  margin: 0 auto;
+  text-align: center;
+  text-wrap: balance;
+  margin-inline: auto;
+  padding: 0.5em;
 }
 
 .nav {
@@ -80,6 +88,7 @@ p {
 .nav-logo-marca {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5em;
+  display: block;
 }
 .nav-logo-slogan {
   font-family: "Montserrat Alternates", sans-serif;
@@ -142,6 +151,7 @@ p {
 .footer-logo-marca {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5em;
+  display: block;
 }
 .footer-logo-slogan {
   font-family: "Montserrat Alternates", sans-serif;
@@ -165,7 +175,7 @@ p {
   border-radius: 50px;
   width: 25%;
   min-width: 250px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 .index-main-slogan {
   font-family: "Montserrat Alternates", sans-serif;
@@ -173,7 +183,9 @@ p {
   padding: 0.5em;
 }
 .index-main-img {
+  width: 300px;
   max-width: 300px;
+  margin: 0 auto;
 }
 
 .index-main-img:hover {
@@ -197,7 +209,7 @@ p {
   gap: 1em;
   padding: 1em;
   max-width: 1400px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 .artistas .artistas-container .artista {
   padding: 1em;
@@ -210,11 +222,6 @@ p {
 .artistas .artistas-container .artista-img {
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
-  box-shadow: 1px 1px 3px #9e8786;
-}
-
-.artistas .artista:hover {
-  box-shadow: 2px 1px 10px #9e8786;
 }
 
 /* fin Index Nuestros Artistas */
@@ -249,7 +256,6 @@ p {
   object-fit: cover;
   margin: -100px 0 30px 0;
   border-radius: 100%;
-  box-shadow: 1px 2px 5px #9e8786;
 }
 .artista-main .artista-datos {
   padding-bottom: 1em;
@@ -278,16 +284,16 @@ p {
 
 /* Fin Artista descripción */
 .obras {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 2em 0;
   width: 100%;
   text-align: center;
 }
 .obras-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3vw;
-  justify-content: center;
   background: radial-gradient(#fcfcfc, #f2f2f2, #a4bfb8);
   padding: 32px 0;
   border-radius: 16px;
@@ -300,7 +306,6 @@ p {
 .obras .obra-img {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 2px 2px 10px #9e8786;
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
@@ -313,7 +318,7 @@ p {
   text-align: center;
   background-color: rgba(242, 160, 153, 0.7);
   position: absolute;
-  bottom: -15px;
+  bottom: -20px;
   padding: 0.5em;
   color: #fcfcfc;
   display: block;
@@ -344,7 +349,7 @@ p {
   text-align: center;
 }
 .acceso-box {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 1em;
   min-width: 300px;
   max-width: 600px;
@@ -362,11 +367,6 @@ p {
 .acceso-artista-img {
   width: 100%;
   border-radius: 100%;
-  box-shadow: 2px 2px 5px #9e8786;
-}
-
-.acceso-artista:hover {
-  box-shadow: 1px 2px 5px #9e8786;
 }
 
 /* Fin Acceso a otros artistas */
@@ -387,7 +387,6 @@ p {
 }
 .contacto-main .contacto-img {
   border-radius: 100%;
-  box-shadow: 1px 2px 5px #9e8786;
   max-width: 250px;
 }
 .contacto-main .contacto-img:hover {
@@ -410,7 +409,6 @@ p {
   background-color: #fcfcfc;
   border: 1px solid #a4bfb8;
   border-radius: 5px;
-  box-shadow: 1px 2px 5px #9e8786;
   min-width: 300px;
 }
 .contacto-main .contacto-form label {
@@ -432,7 +430,6 @@ p {
   height: 32px;
   background-color: #a4bfb8;
   border: none;
-  box-shadow: 1px 2px 5px #9e8786;
   margin: 16px auto 8px auto;
   width: 50%;
 }
@@ -467,7 +464,7 @@ p {
   }
   .nav-menu-item {
     padding: 8px;
-    margin: 0 auto;
+    margin-inline: auto;
   }
   .nav-menu-item a {
     background-color: transparent;
@@ -503,7 +500,7 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin-inline: auto;
     border-bottom: 3px solid #f2c2c2;
     width: 100%;
   }
