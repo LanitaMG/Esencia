@@ -1,67 +1,543 @@
+@charset "UTF-8";
+/* Variables */
+/* Colores */
+/* Fuentes */
+/* Sombras */
+.contacto-main .contacto-form .button, .contacto-main .contacto-form, .contacto-main .contacto-img, .acceso-artista:hover, .acceso-artista-img, .obras .obra-img, .artista-main .artista-img, .artistas .artista:hover, .artistas .artistas-container .artista-img {
+  box-shadow: 1px 2px 5px #9e8786;
+}
+
+/* fin variables */
+/* REset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #fcfcfc;
+  font-family: Montserrat, sans-serif;
+  background-color: #fcfcfc;
+  color: #1d1d1d;
 }
 
-.logo, .slogan, h1, h2, h5 {
-    font-family: "Montserrat Alternates", sans-serif;
+a {
+  text-decoration: none;
+  color: #1d1d1d;
 }
 
-.encabezado, .pie {
-    background-color: #EFCAAC;
+li {
+  list-style-type: none;
 }
 
-.fondoRamas {
-    background-image: url(../assets/fondoRamas.png);
-    background-size:cover;
+img {
+  width: 100%;
+}
+
+/* fin Reset */
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-shadow: 1px 2px 5px #f2a099;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0.5em;
+}
+
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0.5em;
+  text-shadow: 1px 2px 5px #a4bfb8;
+}
+
+p {
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  font-weight: normal;
+  max-width: 80ch;
+  text-align: center;
+  text-wrap: balance;
+  margin-inline: auto;
+  padding: 0.5em;
+}
+
+.nav {
+  background-color: #f2a099;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1em;
+}
+.nav-logo {
+  text-align: center;
+  float: left;
+  margin-left: 1em;
+}
+.nav-logo-marca {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5em;
+  display: block;
+}
+.nav-logo-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.nav-carpincho {
+  display: none;
+}
+.nav-menu-box {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.nav-menu-box > div {
+  width: max-content;
+  position: relative;
+  margin-right: 1em;
+}
+.nav-menu-icon {
+  font-size: 2.5em;
+  cursor: pointer;
+}
+.nav-menu {
+  border: #fcfcfc 1px solid;
+  border-radius: 10px;
+  background-color: #f2c2c2;
+  padding: 1em;
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  z-index: 100;
+  width: max-content;
+}
+.nav-menu .nav-artistas-item {
+  font-size: 0.9em;
+  padding: 0.5em;
+}
+
+.nav-menu-box > div:hover .nav-menu {
+  display: flex;
+}
+
+/* fin Header-Menu */
+.footer {
+  text-align: center;
+}
+.footer-arboleda {
+  height: 10em;
+  background-image: url(../assets/arboles.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.footer-logo {
+  background: linear-gradient(to bottom right, #f2c2c2, #f2a099);
+  padding: 1em;
+  /* Fin Footer - Logo */
+}
+.footer-logo-marca {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5em;
+  display: block;
+}
+.footer-logo-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer-logo > p {
+  font-size: 0.8em;
+  padding-top: 0.5em;
+}
+
+/* Fin Footer */
+/* Index */
+.index-main {
+  background-image: url(../assets/fondoRamas.png);
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 2em;
+}
+.index-main-marca {
+  background-color: white;
+  border-radius: 50px;
+  width: 25%;
+  min-width: 250px;
+  margin-inline: auto;
+}
+.index-main-slogan {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.index-main-img {
+  width: 300px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.index-main-img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+/* fin Index-Main */
+.artistas {
+  background-image: url(../assets/FondoMadera.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  padding: 2em;
+}
+.artistas .artistas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+  padding: 1em;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.artistas .artistas-container .artista {
+  padding: 1em;
+  border: 1px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  max-width: 250px;
+}
+.artistas .artistas-container .artista-img {
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+/* fin Index Nuestros Artistas */
+.index-esencia {
+  text-align: center;
+  padding: 2em;
+}
+
+/* fin Index - Nuestra esencia */
+/* Páginas artistas */
+.artista-main {
+  background-image: url(../assets/fondoHojas.png);
+  background-size: cover;
+  padding: 2em;
+}
+.artista-main .artista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 1em;
+  margin: 80px auto 0 auto;
+  border-radius: 24px;
+  background-color: rgba(164, 191, 184, 0.15);
+  backdrop-filter: blur(3px);
+  border: 1.5px solid rgba(164, 191, 184, 0.1);
+}
+.artista-main .artista-img {
+  max-width: 100%;
+  object-fit: cover;
+  margin: -100px 0 30px 0;
+  border-radius: 100%;
+}
+.artista-main .artista-datos {
+  padding-bottom: 1em;
+}
+.artista-main .artista-datos-nombre {
+  padding: 0;
+}
+.artista-main .artista-datos-contacto {
+  padding-top: 1em;
+}
+.artista-main .artista-datos-contacto span {
+  color: #a4bfb8;
+  font-size: 1.2em;
+}
+.artista-main .artista-datos-contacto li {
+  padding: 0.5em;
+}
+
+/* Fin Artista Main Card */
+.artista-descripcion {
+  padding: 2em;
+}
+.artista-descripcion p {
+  padding: 8px;
+}
+
+/* Fin Artista descripción */
+.obras {
+  margin-inline: auto;
+  padding: 2em 0;
+  width: 100%;
+  text-align: center;
+}
+.obras-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  background: radial-gradient(#fcfcfc, #f2f2f2, #a4bfb8);
+  padding: 32px 0;
+  border-radius: 16px;
+}
+.obras .obra {
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+}
+.obras .obra-img {
+  width: 100%;
+  border-radius: 8px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show-obras;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+.obras .obra-datos {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(242, 160, 153, 0.7);
+  position: absolute;
+  bottom: -20px;
+  padding: 0.5em;
+  color: #fcfcfc;
+  display: block;
+  opacity: 0;
+  border-radius: 8px;
+  transition: all 0.5 ease-in-out;
+}
+.obras .obra:hover .obra-datos {
+  opacity: 1;
+  display: block;
+  bottom: 0;
+  transition-duration: 0.5s;
+}
+
+@keyframes show-obras {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+/* Fin Galería de obras */
+.acceso {
+  padding: 2em;
+  text-align: center;
+}
+.acceso-box {
+  margin-inline: auto;
+  padding: 1em;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+.acceso-artista {
+  max-width: 200px;
+  padding: 1em;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+.acceso-artista-img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+/* Fin Acceso a otros artistas */
+/* Fin Página Artistas */
+/* Página Contacto */
+.contacto-main {
+  background-image: url(../assets/fondoRamas.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+.contacto-main .contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+}
+.contacto-main .contacto-img {
+  border-radius: 100%;
+  max-width: 250px;
+}
+.contacto-main .contacto-img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.contacto-main .contacto-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-around;
+}
+.contacto-main .contacto-redes .bi {
+  color: #a4bfb8;
+}
+.contacto-main .contacto-form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #fcfcfc;
+  border: 1px solid #a4bfb8;
+  border-radius: 5px;
+  min-width: 300px;
+}
+.contacto-main .contacto-form label {
+  display: block;
+  padding: 8px 0 4px 0;
+}
+.contacto-main .contacto-form input:not(.button) {
+  border: 1px solid #a4bfb8;
+  height: 32px;
+  min-width: 80px;
+  width: 100%;
+}
+.contacto-main .contacto-form textarea {
+  border: 1px solid #a4bfb8;
+  width: 100%;
+  min-height: 124px;
+}
+.contacto-main .contacto-form .button {
+  height: 32px;
+  background-color: #a4bfb8;
+  border: none;
+  margin: 16px auto 8px auto;
+  width: 50%;
+}
+
+/* Fin Página Contacto */
+@media (min-width: 768px) {
+  .nav {
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+  .nav-carpincho {
+    display: block;
+    width: 80px;
+    justify-self: center;
+  }
+  .nav-menu-icon {
+    display: none;
+  }
+  .nav-menu {
+    border: none;
+    border-radius: 0;
+    background-color: inherit;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    position: relative;
+    top: 0;
+    right: 0;
+    align-self: start;
+    margin-right: 1em;
+    font-weight: 500;
+  }
+  .nav-menu-item {
+    padding: 8px;
+    margin-inline: auto;
+  }
+  .nav-menu-item a {
+    background-color: transparent;
+  }
+  .nav .nav-artistas {
+    display: none;
+    font-size: 1rem;
+    padding: 8px;
+    flex-direction: column;
+    position: absolute;
+    gap: 8px;
+    background-color: #f2a099;
+    border: 1px solid #f2c2c2;
+    border-radius: 10%;
+    width: max-content;
+  }
+  .nav .nav-artistas-item {
+    padding: 4px;
+  }
+  .active {
+    background-color: #f2c2c2;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  .nav-menu-item,
+  .nav-artistas-item {
+    position: relative;
+  }
+  .nav-menu-item:not(.active):hover::before,
+  .nav-artistas-item:not(.active):hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    border-bottom: 3px solid #f2c2c2;
+    width: 100%;
+  }
+  .nav-menu-artistas:hover .nav-artistas {
+    display: flex;
+  }
+  /* Fin Nav - Menú */
+  /* Fin Header*/
+  /* Página Artistas */
+  .artista-main .artista {
+    flex-direction: row;
+    width: max-content;
+    min-width: 600px;
+    max-width: 800px;
+    padding: 24px;
+    margin: 0 auto;
+    position: relative;
+    left: 40px;
+  }
+  .artista-main .artista-img {
+    max-width: 300px;
+    margin: 0 0 0 -80px;
+    border-radius: 24px;
+  }
+  .artista-main .artista-datos {
+    padding: 0 24px 0 24px;
+    text-align: start;
+  }
+  .obras-container {
+    width: 80vw;
+    padding: 32px;
+    margin: 0 auto;
+  }
+  .contacto-main {
+    background-size: cover;
     background-position: bottom;
+  }
 }
 
-.nuestrosArtistas {
-    background-image: url(../assets/fondoMadera.jpg);
-    background-size: cover;
-}
-
-
-.carousel-item {
-    width: 400px;
-}
-
-.btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #B7C8C2;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-border-color: #B7C8C2;
-    --bs-btn-hover-bg: #BFC1CD;
-    --bs-btn-hover-border-color: #BFC1CD;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #B7C8C2;
-    --bs-btn-active-border-color: #B7C8C2;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #eee;
-    --bs-btn-disabled-border-color: #eee;
-
-}
-
-.arboleda {
-    height: 10em;
-    background-image: url(../assets/arboles.png);
-    background-repeat: repeat;
-    background-size: contain;
-}
-
-
-.hojas {
-    background-image: url(../assets/fondoHojas.png);
-    background-size: cover;
-}
-
-.retrato {
-    max-height: 60vh;
-}
-
-.mini-retrato {
-    max-height: 20vh;
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+
+@mixin font-styles ($font, $size, $spacing, $weight) {
+    font-family: $font;
+    font-size: $size;
+    letter-spacing: $spacing;
+    font-weight: $weight;
+}
+
+h1 {
+    @include font-styles($title-font, 2em, 2px, 500);
+    @include text-shadow($primary-color);
+    padding: 0.5em 1em 
+}
+
+h2 {
+    @include font-styles($title-font, 1.5em, 1px, 500);
+    padding: 0.5em;
+}
+
+h3 {    
+    @include font-styles($title-font, 1.2em, 1px, 500);
+    padding: 0.5em;
+    @include text-shadow($secondary-color);
+
+}
+
+p {
+    @include font-styles($paragraph-font, 1em, 0, normal);
+    max-width: 80ch;
+    text-align: center;
+    text-wrap: balance;
+    margin-inline: auto;
+    padding: 0.5em;
+
+}
+

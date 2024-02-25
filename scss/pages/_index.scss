@@ -1,0 +1,102 @@
+/* Index */
+
+// ***************************
+// * Main - Logo + carpincho *
+// ***************************
+
+.index-main {
+    background-image: url(../assets/fondoRamas.png);
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    padding: 2em;
+  
+    
+
+    &-marca {
+        background-color: white;
+        border-radius: 50px;
+        width: 25%;
+        min-width: 250px;
+        margin-inline: auto;
+    }
+
+    &-slogan {
+        font-family: $title-font;
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+
+    &-img {
+        width: 300px;
+        max-width: 300px;
+        margin: 0 auto;
+
+
+    }
+
+   
+
+}
+
+.index-main-img:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;    
+}
+
+/* fin Index-Main */
+
+
+// *********************
+// * Nuestros artistas *
+// *********************
+.artistas {
+    background-image: url(../assets/FondoMadera.jpg);
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding: 2em;
+
+    .artistas-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1em;
+        padding: 1em;
+        max-width: 1400px;
+        margin-inline: auto;
+
+        .artista {
+            padding: 1em;
+            border: 1px solid $grey-light;
+            background-color: rgba($grey-light, 0.5);
+            border-top-left-radius: 30%;
+            border-top-right-radius: 30%;
+            max-width: 250px;
+
+            &-img {
+                border-top-left-radius: 30%;
+                border-top-right-radius: 30%;
+                @extend %box-shadow;
+            }
+        }
+    }
+}
+
+.artistas .artista:hover {
+    @extend %box-shadow;    
+}
+
+/* fin Index Nuestros Artistas */
+
+// *******************
+// * Nuestra esencia *
+// *******************
+
+.index-esencia {
+    text-align: center;
+    padding: 2em;
+}
+
+/* fin Index - Nuestra esencia */

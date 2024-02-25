@@ -21,126 +21,88 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <!-- Boostrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Esencia - Lucía Gómez</title>
+    <title>Esencia - Pedro Fernández</title>
   </head>
 
   <body>
     <!-- Encabezado -->
-    <header class="encabezado">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid position-relative">
-          <!-- Encabezado - Logo + Slogan -->
-          <a
-            class="navbar-brand align-self-center text-center"
-            href="../index.html"
-          >
-            <span class="logo fs-3">ESENCIA</span>
-            <p class="slogan fs-6 m-0 text-secondary">Alma de bosque</p>
-          </a>
-          <!-- Carpincho - Visible solo en md -->
-          <img
-            class="d-none d-md-block position-absolute top-50 start-50 translate-middle"
-            src="../assets/carpincho2.png"
-            alt="Carpincho de madera"
-            width="100px"
-          />
-          <!-- Encabezado - Menú -->
-          <div class="align-self-center">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html"
-                    >Inicio</a
-                  >
+    <header class="nav">
+      <div class="nav-logo-box">
+        <a class="nav-logo" href="../index.html">
+          <span class="nav-logo-marca">ESENCIA</span>
+          <span class="nav-logo-slogan">Alma de bosque</span>
+        </a>
+      </div>
+      <!-- Carpincho - Visible solo en md -->
+      <img
+        class="nav-carpincho"
+        src="../assets/carpincho2.png"
+        alt="Carpincho de madera"
+      />
+      <!-- Encabezado - Menú -->
+      <div class="nav-menu-box">
+        <div>
+          <i class="bi bi-list nav-menu-icon"></i>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-menu-item nav-menu-artistas active">
+              Artistas
+              <ul class="nav-artistas">
+                <li class="nav-artistas-item">
+                  <a href="./luciagomez.html">Lucía Gómez</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Artistas
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="./luciagomez.html"
-                        >Lucía Gómez</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./cuchilepratte.html"
-                        >Cuchi Lepratte</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./pedrofernandez.html"
-                        >Pedro Fernández</a
-                      >
-                    </li>
-                  </ul>
+                <li class="nav-artistas-item">
+                  <a href="./cuchilepratte.html">Cuchi Lepratte</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                <li class="nav-artistas-item">
+                  <a href="./pedrofernandez.html">Pedro Fernández</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li class="nav-menu-item">
+              <a class="" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </header>
+    <!-- Fin Encabezado -->
 
-    <main class="container-fluid hojas">
-      <div class="row p-5 text-center">
-        <div class="col-md-4 offset-md-2">
-          <img
-            src="../assets/artistaPedroFernandez.png"
-            class="rounded-pill img-fluid retrato"
-            alt="Retrato de Pedro Fernández"
-          />
-        </div>
-        <div class="col-md-4 align-self-center">
-          <h1 class="display-4 p-3">Pedro Fernández</h1>
-          <p><span class="bi bi-geo-alt"></span> Recreo - Santa Fe</p>
-          <p>
-            <span class="bi bi-instagram"></span
-            ><a
-              class="text-decoration-none text-muted"
-              href="http://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @pedrofernandez_autoarte</a
-            >
-          </p>
+    <!-- Presentación Artista -->
+    <main class="artista-main">
+      <div class="artista">
+        <img
+          src="../assets/artistaPedroFernandez.png"
+          class="artista-img"
+          alt="Retrato de Pedro Fernández"
+        />
+        <div class="artista-datos">
+          <h1 class="artista-datos-nombre">Pedro Fernández</h1>
+          <ul class="artista-datos-contacto">
+            <li>
+              <span class="bi bi-geo-alt"></span
+              ><a
+                href="https://maps.app.goo.gl/ewbUNeLikcybzk4Z9"
+                target="_blank"
+              >
+                Recreo - Santa Fe</a
+              >
+            </li>
+            <li>
+              <span class="bi bi-instagram"></span
+              ><a href="http://www.instagram.com" target="_blank">
+                @pedrofernandez_autoarte</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </main>
-    <section class="container text-center p-3">
+    <section class="artista-descripcion">
       <p>
         Pedro es un artista que crea autos de juguete utilizando madera de
         muebles descartados. Su creatividad y habilidad para transformar objetos
@@ -156,132 +118,141 @@
       </p>
     </section>
 
-    <section class="container text-center p-3">
-      <h2 class="display-5 p-5">Obras</h2>
-      <div class="row g-3 pb-5">
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_01.png"
-            alt="Camión"
-            class="img-fluid shadow rounded-3"
-          />
+    <!-- Galería de obras -->
+    <section class="obras">
+      <h2 class="">Obras</h2>
+      <div class="obras-container">
+        <div class="obra">
+          <img src="../assets/auto-01.png" alt="Camión" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Camión de reparto</h3>
+            <p>Viejo camión de reparto de víveres</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_02.png"
-            alt="Rastrojero"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-02.png" alt="Camioneta" class="obra-img" />
+          <div class="obra-datos">
+            <h3>La chata del abuelo</h3>
+            <p>Recordando la niñez y los paseos con los abuelos</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_03.png"
-            alt="Camioneta"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-03.png" alt="Camioncito" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Camioncito</h3>
+            <p>Pequeño pero poderoso camión</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_02.png"
-            alt="Rastrojero"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-04.png" alt="Auto" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Auto</h3>
+            <p>Auto de época</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_03.png"
-            alt="Camioneta"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-05.png" alt="Camión" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Camión</h3>
+            <p>Camión de reparto</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_01.png"
-            alt="Camión"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-06.png" alt="Locomotora" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Locomotora</h3>
+            <p>Locomotora a vapor con doble chimenea</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_03.png"
-            alt="Camioneta"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-07.png" alt="Vagón" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Vagón</h3>
+            <p>Vagón de tren antiguo</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_01.png"
-            alt="Camión"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-08.png" alt="Locomotora" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Locomotora</h3>
+            <p>Sencilla locomotora a vapor</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img
-            src="../assets/auto_02.png"
-            alt="Rastrojero"
-            class="img-fluid shadow rounded-3"
-          />
+        <div class="obra">
+          <img src="../assets/auto-09.png" alt="Locomotora" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Locomotora</h3>
+            <p>Ruedan que ruedan las ruedas...</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/auto-10.png" alt="Camioncito" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Camioncito</h3>
+            <p>Pequeño camión forrajero</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/auto-11.png" alt="Auto" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Auto clásico</h3>
+            <p>Pequeño pero poderoso auto</p>
+          </div>
+        </div>
+        <div class="obra">
+          <img src="../assets/auto-12.png" alt="Chata" class="obra-img" />
+          <div class="obra-datos">
+            <h3>Chata</h3>
+            <p>Pequeño pero poderosa camioneta</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Nuestros Artistas -->
-    <section>
-      <article class="container-fluid p-3">
-        <div class="container text-center">
-          <p class="fs-5">Conoce también a estos artistas:</p>
-          <div class="row">
-            <div class="col-md-4 offset-md-2">
-              <a
-                href="./luciagomez.html"
-                class="text-decoration-none text-muted"
-              >
-                <img
-                  src="../assets/artistaLuciaGomez.png"
-                  class="rounded-pill mini-retrato"
-                  alt="Retrato de la artista Lucía Gómez"
-                />
-                <p>Lucía Gómez</p>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a
-                href="./cuchilepratte.html"
-                class="text-decoration-none text-muted"
-              >
-                <img
-                  src="../assets/artistaCuchiLepratte.png"
-                  class="rounded-pill mini-retrato"
-                  alt="Retrato del artista Cuchi Lepratte"
-                />
-                <p>Cuchi Lepratte</p>
-              </a>
-            </div>
-          </div>
+    <!-- Acceso a otros artistas -->
+    <section class="acceso">
+      <p>Conoce también a estos artistas:</p>
+      <div class="acceso-box">
+        <div class="acceso-artista">
+          <a href="./luciagomez.html" class="">
+            <img
+              src="../assets/artistaLuciaGomez.png"
+              class="acceso-artista-img"
+              alt="Retrato de la artista Lucía Gómez"
+            />
+            Lucía Gómez
+          </a>
         </div>
-      </article>
+        <div class="acceso-artista">
+          <a href="./cuchilepratte.html" class="">
+            <img
+              src="../assets/artistaCuchiLepratte.png"
+              class="acceso-artista-img"
+              alt="Retrato del artista Cuchi Lepratte"
+            />
+            Cuchi Lepratte
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="pie">
-      <div class="arboleda" src="./assets/arboles.png" alt="Arboleda"></div>
-      <div class="container-fluid text-center pt-3">
-        <a class="text-decoration-none text-muted" href="../index.html">
-          <span class="logo fs-3"> ESENCIA </span>
-          <p class="slogan fs-6">Alma de bosque</p>
+    <footer class="footer">
+      <div
+        class="footer-arboleda"
+        src="./assets/arboles.png"
+        alt="Arboleda"
+      ></div>
+      <div class="footer-logo">
+        <a href="../index.html">
+          <span class="footer-logo-marca">ESENCIA</span>
+          <span class="footer-logo-slogan">Alma de bosque</span>
         </a>
-        <p class="small m-0 pb-3">
+        <p>
           Las imágenes y los textos que ves en este sitio web fueron generados
           mediante IA
         </p>
       </div>
     </footer>
-
-    <!-- scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

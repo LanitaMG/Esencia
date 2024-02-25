@@ -1,0 +1,91 @@
+/* Página Contacto */
+
+// ************
+// * Contacto *
+// ************
+.contacto-main {
+        background-image: url(../assets/fondoRamas.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        padding: 2em;
+        
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        gap: 2em;
+
+        &-img {
+            border-radius: 100%;
+            @extend %box-shadow;
+            max-width: 250px;
+        }
+
+        &-img:hover {
+            transform: rotate(360deg);
+            transition-duration: 1s;
+        }
+
+
+
+        // ******************
+        // * Redes sociales *
+        // ******************
+
+        &-redes {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: space-around;
+
+            .bi {
+                color: $secondary-color;
+            }
+        }
+
+        // **************
+        // * Formulario *
+        // **************
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            background-color: $grey-light;
+            border: 1px solid $secondary-color;
+            border-radius: 5px;
+            @extend %box-shadow;
+            min-width: 300px;
+
+            label {
+                display: block;
+                padding: 8px 0 4px 0;
+            }
+
+            input:not(.button) {
+                border: 1px solid $secondary-color;
+                height: 32px;
+                min-width: 80px;
+                width: 100%;
+            }
+
+            textarea {
+                border: 1px solid $secondary-color;
+                width: 100%;
+                min-height: 124px;
+            }
+
+            .button {
+                height: 32px;
+                background-color: $secondary-color;
+                border: none;
+                @extend %box-shadow;
+                margin: 16px auto 8px auto;
+                width: 50%;
+            }
+        }
+    }
+}
+
+/* Fin Página Contacto */
