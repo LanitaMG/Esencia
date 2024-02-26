@@ -9,10 +9,8 @@
     background-size: cover;
     background-position: bottom;
     text-align: center;
-    padding: 2em;
+    @extend %section-padding;
   
-    
-
     &-marca {
         background-color: white;
         border-radius: 50px;
@@ -30,15 +28,11 @@
     &-img {
         width: 300px;
         max-width: 300px;
-        margin: 0 auto;
-
-
+        margin-inline: auto;
     }
-
-   
+ 
 
 }
-
 .index-main-img:hover {
     transform: rotate(360deg);
     transition-duration: 1s;    
@@ -51,18 +45,15 @@
 // * Nuestros artistas *
 // *********************
 .artistas {
-    background-image: url(../assets/FondoMadera.jpg);
+    background-image: url(../assets/fondoMadera.jpg);
     background-size: cover ;
     background-attachment: fixed;
     background-position: center;
     text-align: center;
-    padding: 2em;
+    @extend %section-padding;
 
     .artistas-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 1em;
+        @include flexible (null, wrap, null, space-evenly, 1em);
         padding: 1em;
         max-width: 1400px;
         margin-inline: auto;
@@ -96,7 +87,7 @@
 
 .index-esencia {
     text-align: center;
-    padding: 2em;
+    @extend %section-padding;
 }
 
 /* fin Index - Nuestra esencia */

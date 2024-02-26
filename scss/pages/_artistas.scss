@@ -6,12 +6,10 @@
 .artista-main {
     background-image: url(../assets/fondoHojas.png);
     background-size: cover;
-    padding: 2em;
+    @extend %section-padding;
 
     .artista {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexible (column, null, center, null, null);
         text-align: center;
         min-width: 300px;
         max-width: 450px;
@@ -59,7 +57,7 @@
 // *************************
 
 .artista-descripcion {
-    padding: 2em;
+    @extend %section-padding;
 
     p {
           padding: 8px;
@@ -79,10 +77,7 @@
     text-align: center;
 
     &-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 3vw;
+        @include flexible (null, wrap, null, center, 4vw);
         background: radial-gradient($grey-light, $grey, $secondary-color);
         padding: 32px 0;
         border-radius: 16px;
@@ -147,7 +142,7 @@
 // ****************************
 
 .acceso {
-    padding: 2em;
+    @extend %section-padding;
     text-align: center;
 
     &-box {
@@ -155,10 +150,7 @@
         padding: 1em;
         min-width: 300px;
         max-width: 600px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1em;
+        @include flexible (null, wrap, null, space-around, 1em);
     }
 
     &-artista {

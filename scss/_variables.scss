@@ -12,6 +12,7 @@ $grey-light: #fcfcfc;
 $black: #1d1d1d;
 
 
+
 /* Fuentes */
 
 $title-font: "Montserrat Alternates", sans-serif;
@@ -27,6 +28,23 @@ $paragraph-font: Montserrat, sans-serif;
 @mixin text-shadow ($color, $x:1px, $y:2px, $p:5px){
   text-shadow: $x $y $p $color;
 }
+
+/* Padding */
+%section-padding {
+  padding: 2em;
+}
+
+
+/* Flexbox */
+@mixin flexible ($direction, $wrap, $align, $justify, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
 
 /* fin variables */
 

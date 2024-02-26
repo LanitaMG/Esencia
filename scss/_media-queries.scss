@@ -33,9 +33,7 @@
       border-radius: 0;
       background-color: inherit;
       padding: 0;
-      display: flex;
-      flex-direction: row;
-      gap: 32px;
+      @include flexible (row, no-wrap, center, center, 2em);
       position: relative;
       top: 0;
       right: 0;

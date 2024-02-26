@@ -7,6 +7,12 @@
   box-shadow: 1px 2px 5px #9e8786;
 }
 
+/* Padding */
+.contacto-main, .acceso, .artista-descripcion, .artista-main, .index-esencia, .artistas, .index-main {
+  padding: 2em;
+}
+
+/* Flexbox */
 /* fin variables */
 /* REset */
 * {
@@ -98,7 +104,10 @@ p {
 }
 .nav-menu-box {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
+  gap: 2em;
   width: 100%;
 }
 .nav-menu-box > div {
@@ -122,7 +131,7 @@ p {
   top: 1.5em;
   right: 1em;
   z-index: 100;
-  width: max-content;
+  width: 200px;
 }
 .nav-menu .nav-artistas-item {
   font-size: 0.9em;
@@ -168,7 +177,6 @@ p {
   background-size: cover;
   background-position: bottom;
   text-align: center;
-  padding: 2em;
 }
 .index-main-marca {
   background-color: white;
@@ -185,7 +193,7 @@ p {
 .index-main-img {
   width: 300px;
   max-width: 300px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .index-main-img:hover {
@@ -195,12 +203,11 @@ p {
 
 /* fin Index-Main */
 .artistas {
-  background-image: url(../assets/FondoMadera.jpg);
+  background-image: url(../assets/fondoMadera.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   text-align: center;
-  padding: 2em;
 }
 .artistas .artistas-container {
   display: flex;
@@ -227,7 +234,6 @@ p {
 /* fin Index Nuestros Artistas */
 .index-esencia {
   text-align: center;
-  padding: 2em;
 }
 
 /* fin Index - Nuestra esencia */
@@ -235,7 +241,6 @@ p {
 .artista-main {
   background-image: url(../assets/fondoHojas.png);
   background-size: cover;
-  padding: 2em;
 }
 .artista-main .artista {
   display: flex;
@@ -275,9 +280,6 @@ p {
 }
 
 /* Fin Artista Main Card */
-.artista-descripcion {
-  padding: 2em;
-}
 .artista-descripcion p {
   padding: 8px;
 }
@@ -291,9 +293,9 @@ p {
 }
 .obras-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 3vw;
+  justify-content: center;
+  gap: 4vw;
   background: radial-gradient(#fcfcfc, #f2f2f2, #a4bfb8);
   padding: 32px 0;
   border-radius: 16px;
@@ -345,7 +347,6 @@ p {
 }
 /* Fin Galería de obras */
 .acceso {
-  padding: 2em;
   text-align: center;
 }
 .acceso-box {
@@ -376,14 +377,13 @@ p {
   background-image: url(../assets/fondoRamas.png);
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 2em;
 }
 .contacto-main .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
   gap: 2em;
+  padding: 1em;
 }
 .contacto-main .contacto-img {
   border-radius: 100%;
@@ -396,8 +396,8 @@ p {
 .contacto-main .contacto-redes {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   justify-content: space-around;
+  gap: 0.5em;
 }
 .contacto-main .contacto-redes .bi {
   color: #a4bfb8;
@@ -405,7 +405,7 @@ p {
 .contacto-main .contacto-form {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 1em;
   background-color: #fcfcfc;
   border: 1px solid #a4bfb8;
   border-radius: 5px;
@@ -420,6 +420,9 @@ p {
   height: 32px;
   min-width: 80px;
   width: 100%;
+}
+.contacto-main .contacto-form input:focus {
+  outline: 1px solid #54726a;
 }
 .contacto-main .contacto-form textarea {
   border: 1px solid #a4bfb8;
@@ -454,7 +457,10 @@ p {
     padding: 0;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
     position: relative;
     top: 0;
     right: 0;
