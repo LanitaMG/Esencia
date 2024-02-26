@@ -33,7 +33,7 @@
       border-radius: 0;
       background-color: inherit;
       padding: 0;
-      @include flexible (row, no-wrap, null, space-around, 1.5em);
+      @include flexible (row, null, center, space-around, null);
       position: relative;
       top: 0;
       right: 0;
