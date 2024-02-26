@@ -33,7 +33,7 @@
       border-radius: 0;
       background-color: inherit;
       padding: 0;
-      @include flexible (row, no-wrap, center, center, 2em);
+      @include flexible (row, no-wrap, null, space-around, 1.5em);
       position: relative;
       top: 0;
       right: 0;
@@ -81,6 +81,7 @@
   .nav-artistas-item {
     position: relative;
   }
+
 
   .nav-menu-item:not(.active):hover::before,
   .nav-artistas-item:not(.active):hover::before {

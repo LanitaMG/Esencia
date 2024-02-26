@@ -137,6 +137,13 @@ p {
   font-size: 0.9em;
   padding: 0.5em;
 }
+.nav .nav-menu-item:not(.active) a:hover,
+.nav .nav-artistas-item:not(.active) a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #f2a099;
+}
 
 .nav-menu-box > div:hover .nav-menu {
   display: flex;
@@ -458,9 +465,8 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-around;
+    gap: 1.5em;
     position: relative;
     top: 0;
     right: 0;
