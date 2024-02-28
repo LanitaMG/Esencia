@@ -523,7 +523,7 @@ p {
   /* Fin Nav - Menú */
   /* Fin Header*/
   /* Página Artistas */
-  .artista-main .artista {
+  .artista-hero .artista {
     flex-direction: row;
     width: max-content;
     min-width: 600px;
@@ -533,12 +533,12 @@ p {
     position: relative;
     left: 40px;
   }
-  .artista-main .artista-img {
+  .artista-hero .artista-img {
     max-width: 300px;
     margin: 0 0 0 -80px;
     border-radius: 24px;
   }
-  .artista-main .artista-datos {
+  .artista-hero .artista-datos {
     padding: 0 24px 0 24px;
     text-align: start;
   }
@@ -547,7 +547,7 @@ p {
     padding: 32px;
     margin: 0 auto;
   }
-  .contacto-main {
+  .contacto {
     background-size: cover;
     background-position: bottom;
   }
