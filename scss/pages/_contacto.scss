@@ -3,85 +3,89 @@
 // ************
 // * Contacto *
 // ************
-.contacto-main {
-        background-image: url(../assets/fondoRamas.png);
-        background-size:contain;
-        background-repeat: no-repeat;
-        @extend %section-padding;
-        
-    .contacto {
-        @include flexible (column, null, center, null, 2em);
+
+
+.contacto {
+    background-image: url(../assets/fondoRamas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @extend %section-padding;
+    @include flexible (column, null, center, null, 2em);
+    padding: 1em;
+
+    &-img {
+        border-radius: 100%;
+        @extend %box-shadow;
+        max-width: 250px;
+    }
+
+    &-img:hover {
+        transform: rotate(360deg);
+        transition-duration: 1s;
+    }
+
+    // ******************
+    // * Redes sociales *
+    // ******************
+
+    &-redes {
+        @include flexible (column, null, null, space-around, 0.5em);
+
+        .bi {
+            color: $secondary-color;
+        }
+    }
+
+    // **************
+    // * Formulario *
+    // **************
+
+    &-form {
+        @include flexible (column, null, null, null, null);
         padding: 1em;
+        background-color: $grey-light;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        @extend %box-shadow;
+        min-width: 300px;
 
-        &-img {
-            border-radius: 100%;
-            @extend %box-shadow;
-            max-width: 250px;
+        label {
+            display: block;
+            padding: 8px 0 4px 0;
         }
 
-        &-img:hover {
-            transform: rotate(360deg);
-            transition-duration: 1s;
-        }
-
-
-
-        // ******************
-        // * Redes sociales *
-        // ******************
-
-        &-redes {
-            @include flexible (column, null, null, space-around, 0.5em);
-
-            .bi {
-                color: $secondary-color;
-            }
-        }
-
-        // **************
-        // * Formulario *
-        // **************
-
-        &-form {
-            @include flexible (column, null, null, null, null);
-            padding: 1em;
-            background-color: $grey-light;
+        input {
             border: 1px solid $secondary-color;
-            border-radius: 5px;
-            @extend %box-shadow;
-            min-width: 300px;
-
-            label {
-                display: block;
-                padding: 8px 0 4px 0;
-            }
-
-            input:not(.button) {
-                border: 1px solid $secondary-color;
-                height: 32px;
-                min-width: 80px;
-                width: 100%;
-            }
-            input:focus {
+            // height: 32px;
+            min-width: 80px;
+            width: 100%;
+            padding: 8px;
+            &:focus {
                 outline: 1px solid $secondary-color-dark;
             }
-            textarea {
-                border: 1px solid $secondary-color;
-                width: 100%;
-                min-height: 124px;
-            }
+        }
 
-            .button {
-                height: 32px;
-                background-color: $secondary-color;
-                border: none;
-                @extend %box-shadow;
-                margin: 16px auto 8px auto;
-                width: 50%;
-            }
+        textarea {
+            border: 1px solid $secondary-color;
+            width: 100%;
+            min-height: 124px;
+            padding: 8px;
+        
+            &:focus {
+                    outline: 1px solid $secondary-color-dark;
+                }
+        }
 
+        .button {
+            height: 32px;
+            background-color: $secondary-color;
+            border: none;
+            @extend %box-shadow;
+            margin: 16px auto 8px auto;
+            width: 50%;
         }
     }
 }
+
 
 /* Fin Página Contacto */

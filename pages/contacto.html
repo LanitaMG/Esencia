@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esencia | Contacto</title>
+    <meta name="theme-color" content="#f2a099">
+    <meta name="description"
+      content="Obras de arte realizadas en madera, creadas por artistas con gran compromiso social y ambiental">
+    <meta name="keywords"
+      content="esencia, alma de bosque, arte, madera, obras de arte en madera, artistas, cuchi lepratte, lucia gomez, pedro fernandez, madera recuperada, madera reciclada, compromiso con el ambiente, ecología">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Esencia | Obras de arte con alma de bosque">
+    <meta property="og:description"
+      content="Obras de arte realizadas en madera, creadas por artistas con gran compromiso social y ambiental">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
   <!-- favicon -->
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
   <!-- Fuentes -->
@@ -12,11 +25,8 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
-
-  <title>Esencia - Contacto</title>
 </head>
 
 <body>
@@ -25,7 +35,7 @@
     <div class="nav-logo-box">
       <a class="nav-logo" href="../index.html">
         <span class="nav-logo-marca">ESENCIA</span>
-          <span class="nav-logo-slogan">Alma de bosque</span>
+        <span class="nav-logo-slogan">Alma de bosque</span>
       </a>
     </div>
     <!-- Carpincho - Visible solo en md -->
@@ -54,32 +64,40 @@
   </header>
   <!-- Fin Encabezado -->
 
-<main class="contacto-main">
-  <div class="contacto">
-     <h1>¡Hablemos!</h1>
-     <img class="contacto-img" src="../assets/animal-01.png" alt="">
-      <p>Si quieres saber más sobre nuestra forma de trabajo, conocer nuestros talleres o adquirir algunas de nuestras obras ¡escríbenos!</p>
-      
+  <main>
+    <section class="contacto">
+      <h1>¡Hablemos!</h1>
+      <img class="contacto-img" src="../assets/animal-01.png" alt="">
+      <p>Si quieres saber más sobre nuestra forma de trabajo, conocer nuestros talleres o adquirir algunas de nuestras
+        obras ¡escríbenos!</p>
+
       <ul class="contacto-redes">
-        <li><span class="bi bi-instagram"></span><a href="http://www.instagram.com" target="_blank"> @esencia_arte</a></li>
-        <li><span class="bi bi-whatsapp"></span><a href="https://api.whatsapp.com/" target="_blank"> +54 (123) 4567890</a></li>
-        <li><span class="bi bi-envelope-at"></span><a href="mailto:info@esencia.com.ar" target="_blank"> info@esencia.com.ar</a></li>
+        <li><span class="bi bi-instagram"></span><a href="http://www.instagram.com" target="_blank"> @esencia_arte</a>
+        </li>
+        <li><span class="bi bi-whatsapp"></span><a href="https://api.whatsapp.com/" target="_blank"> +54 (123)
+            4567890</a></li>
+        <li><span class="bi bi-envelope-at"></span><a href="mailto:info@esencia.com.ar" target="_blank">
+            info@esencia.com.ar</a></li>
       </ul>
 
       <p>Puedes utilizar también el siguiente formulario:</p>
       <form action="" class="contacto-form">
-        <label for="nombre">Nombre:</label>
-        <input id="nombre" type="text">
-        <label for="email">Correo electrónico:</label>
-        <input id="email" type="email">
-        <label for="asunto">Mensaje:</label>
-        <textarea name="asunto" id="asunto"></textarea>
 
-        <input class="contacto-form-button button" type="button" value="Enviar" />
+
+        <label>Nombre:
+          <input id="nombre" type="text" placeholder="Juan Perez">
+        </label>
+        <label>Correo electrónico:
+          <input id="email" type="email" placeholder="mi@correo.com">
+        </label>
+        <label>Mensaje:
+          <textarea name="asunto" id="asunto" placeholder="Hola! Me interesa conocer más sobre ustedes..."></textarea>
+        </label>
+        <button class="contacto-form-button button">Enviar</button>
+
       </form>
-    </div>
-  </div>
-</main>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

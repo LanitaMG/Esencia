@@ -3,7 +3,7 @@
 // **************************
 // * Artista  Card *
 // **************************
-.artista-main {
+.artista-hero {
     background-image: url(../assets/fondoHojas.png);
     background-size: cover;
     @extend %section-padding;
@@ -49,7 +49,7 @@
         }
     }
 }
-/* Fin Artista Main Card */
+/* Fin Artista Hero */
 
 
 // *************************
