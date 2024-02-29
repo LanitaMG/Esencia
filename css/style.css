@@ -205,7 +205,7 @@ p {
 
 .index-hero-img:hover {
   transform: rotate(360deg);
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
 
 /* fin Index-Main */
@@ -236,6 +236,9 @@ p {
 .artistas .artistas-container .artista-img {
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
+}
+.artistas .artistas-container .artista-ver {
+  font-size: 0.9em;
 }
 
 /* fin Index Nuestros Artistas */
@@ -418,7 +421,7 @@ p {
 }
 .contacto-form label {
   display: block;
-  padding: 8px 0 4px 0;
+  padding: 8px 0 8px 0;
 }
 .contacto-form input {
   border: 1px solid #a4bfb8;

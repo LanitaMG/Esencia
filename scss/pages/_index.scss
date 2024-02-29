@@ -30,12 +30,12 @@
         max-width: 300px;
         margin-inline: auto;
     }
- 
-
+    
+    
 }
 .index-hero-img:hover {
     transform: rotate(360deg);
-    transition-duration: 1s;    
+    transition-duration: 0.8s;
 }
 
 /* fin Index-Main */
@@ -71,13 +71,21 @@
                 border-top-right-radius: 30%;
                 @extend %box-shadow;
             }
+
+            &-ver {                
+                font-size: 0.9em;
+                
+            }
         }
     }
 }
 
 .artistas .artista:hover {
-    @extend %box-shadow;    
+    @extend %box-shadow;   
+ 
 }
+
+
 
 /* fin Index Nuestros Artistas */
 
