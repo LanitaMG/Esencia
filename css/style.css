@@ -117,7 +117,10 @@ p {
 .nav-menu-show {
   display: none;
 }
-.nav-menu-show:checked + .nav-menu {
+.nav-menu-show:checked ~ .nav-menu-icon {
+  transform: rotate(90deg);
+}
+.nav-menu-show:checked ~ .nav-menu {
   display: flex;
 }
 .nav-menu {

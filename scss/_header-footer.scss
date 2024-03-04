@@ -56,7 +56,12 @@
     display: none;
   }
 
-  &-menu-show:checked+.nav-menu {
+  &-menu-show:checked~.nav-menu-icon{
+    transform: rotate(90deg);
+
+  }
+
+  &-menu-show:checked~.nav-menu {
     display: flex;
   }
 
