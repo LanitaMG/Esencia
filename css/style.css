@@ -110,14 +110,15 @@ p {
   gap: 2em;
   width: 100%;
 }
-.nav-menu-box > div {
-  width: max-content;
-  position: relative;
-  margin-right: 1em;
-}
 .nav-menu-icon {
   font-size: 2.5em;
   cursor: pointer;
+}
+.nav-menu-show {
+  display: none;
+}
+.nav-menu-show:checked + .nav-menu {
+  display: flex;
 }
 .nav-menu {
   border: #fcfcfc 1px solid;
@@ -128,8 +129,8 @@ p {
   flex-direction: column;
   gap: 1em;
   position: absolute;
-  top: 1.5em;
-  right: 1em;
+  top: 3.5em;
+  right: 0.5em;
   z-index: 100;
   width: 200px;
 }
@@ -143,10 +144,6 @@ p {
   text-underline-offset: 5px;
   text-decoration-thickness: 4px;
   text-decoration-color: #f2a099;
-}
-
-.nav-menu-box > div:hover .nav-menu {
-  display: flex;
 }
 
 /* fin Header-Menu */
