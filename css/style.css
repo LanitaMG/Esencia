@@ -155,7 +155,7 @@ p {
 }
 .footer-arboleda {
   height: 10em;
-  background-image: url(../assets/arboles.png);
+  background-image: url(../assets/img/arboles.png);
   background-size: contain;
   background-repeat: repeat;
 }
@@ -180,7 +180,7 @@ p {
 /* Fin Footer */
 /* Index */
 .index-hero {
-  background-image: url(../assets/fondoRamas.png);
+  background-image: url(../assets/img/fondoRamas.png);
   background-size: cover;
   background-position: bottom;
   text-align: center;
@@ -210,7 +210,7 @@ p {
 
 /* fin Index-Main */
 .artistas {
-  background-image: url(../assets/fondoMadera.jpg);
+  background-image: url(../assets/img/fondoMadera.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -249,7 +249,7 @@ p {
 /* fin Index - Nuestra esencia */
 /* Páginas artistas */
 .artista-hero {
-  background-image: url(../assets/fondoHojas.png);
+  background-image: url(../assets/img/fondoHojas.png);
   background-size: cover;
 }
 .artista-hero .artista {
@@ -384,7 +384,7 @@ p {
 /* Fin Página Artistas */
 /* Página Contacto */
 .contacto {
-  background-image: url(../assets/fondoRamas.png);
+  background-image: url(../assets/img/fondoRamas.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
