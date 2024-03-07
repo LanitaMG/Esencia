@@ -40,10 +40,20 @@
   // * Nav - Menú *
   // **************
 
+// Versión Mobile: 
+// - Se esconde el checkbox
+// - El ícono es una burger (3 span) cuando está escondido y se anima para transformar en cruz al desplegarse. Se aplica z-index para que siempre sea visible.
+// - La animación para el menú consiste en modificar el clip-path
+
+/* Flexbox */
+// flexible ($direction, $wrap, $align, $justify, $gap) 
+
+
   &-menu-box {
     @include flexible(row, wrap, null, end, 2em);
     width: 100%;
   }
+
 
   &-menu-icon {
     cursor: pointer;

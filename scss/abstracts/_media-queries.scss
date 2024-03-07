@@ -24,6 +24,17 @@
     // * Nav - Menú *
     // **************
 
+
+        // Versión Desktop: 
+        // - El checkbox sigue escondido. Se setea clip-path en none dado que no hay interacción con el check.
+        // - El ícono se esconde.
+        // - El menú es flex row.
+        // - El menú artista se esconde.Tell me why??? :(
+    
+        /* Flexbox */
+        // flexible ($direction, $wrap, $align, $justify, $gap) 
+
+        
     &-menu-icon {
       display: none; 
     }

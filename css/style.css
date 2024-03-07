@@ -85,6 +85,7 @@ p {
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   padding: 1em;
+  /* Flexbox */
 }
 .nav-logo {
   text-align: center;
@@ -533,6 +534,7 @@ p {
 @media (min-width: 768px) {
   .nav {
     grid-template-columns: 3fr 1fr 3fr;
+    /* Flexbox */
   }
   .nav-carpincho {
     display: block;
