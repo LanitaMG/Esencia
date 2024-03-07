@@ -40,10 +40,6 @@
   // * Nav - Menú *
   // **************
 
-// Versión Mobile: 
-// - Se esconde el checkbox
-// - El ícono es una burger (3 span) cuando está escondido y se anima para transformar en cruz al desplegarse. Se aplica z-index para que siempre sea visible.
-// - La animación para el menú consiste en modificar el clip-path
 
 /* Flexbox */
 // flexible ($direction, $wrap, $align, $justify, $gap) 
@@ -57,33 +53,20 @@
 
   &-menu-icon {
     cursor: pointer;
-    width: 3em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     position: relative;
-
+    @include flexible(column, null, center, space-around, 0);
+    
     span {
       border-radius: 5px;
       background-color: $black;
       display: block;
-      width: 60%;
-      position: absolute;
-      // margin: 8px auto;
+      width: 100%;
       height: 3px;
+      transform-origin: left;
       animation-duration: 1s;
       animation-fill-mode: forwards;
-      z-index: 1;
-    }
-
-    .linea-1 {
-      top: 0px;
-    }
-
-    .linea-2 {
-      top: 11px;
-    }
-
-    .linea-3 {
-      bottom: 0;
     }
   }
 
@@ -132,9 +115,10 @@
     flex-direction: column;
     gap: 1em;
     position: absolute;
-    top: 1em;
-    right: 2em;
+    top: 4em;
+    right: 1em;
     width: 200px;
+    z-index: 1;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: clip-path 0.5s ease-in;
 
@@ -158,7 +142,7 @@
 @keyframes linea1-animacion {
   50%,
   100% {
-    transform: translateY(10px) rotate(-45deg);
+    transform: rotate(45deg);
   }
 }
 
@@ -173,41 +157,40 @@
 @keyframes linea3-animacion {
   50%,
   100% {
-    transform: translateY(-11px) rotate(45deg);
+    transform: rotate(-45deg);
   }
 }
 
 @keyframes linea1-animacion-close {
   0%,
   50% {
-    transform: translateY(10px) rotate(-45deg);
+    transform: rotate(45deg);
   }
   50%,
   100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @keyframes linea2-animacion-close {
   0%, 50% {
     opacity: 0;
-      width: 0%;
+
   }
   50%,
   100% {
     opacity: 1;
-    width: 60%;
   }
 }
 
 @keyframes linea3-animacion-close {
   0%,
   50% {
-    transform: translateY(-11px) rotate(45deg);
+    transform: rotate(-45deg);
   }
   50%,
   100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 

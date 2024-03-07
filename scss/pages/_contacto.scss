@@ -83,6 +83,12 @@
             @extend %box-shadow;
             margin: 16px auto 8px auto;
             width: 50%;
+            transition: all 1s ease;
+        }
+
+        .button:hover {
+            box-shadow: 2px 4px 10px $shadow-color;
+            background-color: $primary-color;
         }
     }
 }
