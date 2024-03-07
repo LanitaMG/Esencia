@@ -25,26 +25,18 @@
     // **************
 
 
-        // Versión Desktop: 
-        // - El checkbox sigue escondido. Se setea clip-path en none dado que no hay interacción con el check.
-        // - El ícono se esconde.
-        // - El menú es flex row.
-        // - El menú artista se esconde.Tell me why??? :(
-    
-        /* Flexbox */
-        // flexible ($direction, $wrap, $align, $justify, $gap) 
 
-        
+
     &-menu-icon {
-      display: none; 
+      display: none;
     }
 
     .nav-menu-show:not(:checked)~.nav-menu {
       clip-path: none;
     }
-    
 
-    
+
+
     &-menu {
       border: none;
       border-radius: 0;
@@ -58,52 +50,54 @@
       margin-right: 1em;
       font-weight: 500;
       width: auto;
-      
+
       &-item {
         padding: 8px;
         margin-inline: auto;
-        
+
         a {
           background-color: transparent;
         }
       }
     }
-    
+
     .nav-artistas {
-      display: none;
-      font-size: 1rem;
+      @include flexible (column, null, null, null, 8px);
+      font-size: 1em;
       padding: 8px;
-      flex-direction: column;
       position: absolute;
-      gap: 8px;
+      top: 40px;
       background-color: $primary-color;
       border: 1px solid $primary-color-light;
-      border-radius: 10%;
-      width:max-content;
-      
-      
+      border-top-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+      width: max-content;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: clip-path 0.5s ease-in-out;
+
       &-item {
         padding: 4px;
       }
     }
   }
-  
+
   .nav-menu-artistas:hover .nav-artistas {
-    display: flex;
+    // display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  
+
   .active {
     background-color: $primary-color-light;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
   }
-  
+
   .nav-menu-item,
   .nav-artistas-item {
     position: relative;
   }
-  
-  
+
+
   .nav-menu-item:not(.active):hover::before,
   .nav-artistas-item:not(.active):hover::before {
     content: "";
@@ -114,9 +108,10 @@
     margin-inline: auto;
     border-bottom: 3px solid $primary-color-light;
     width: 100%;
+
   }
-  
-  
+
+
 
   /* Fin Nav - Menú */
   /* Fin Header*/

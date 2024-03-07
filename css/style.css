@@ -95,6 +95,7 @@ p {
 .nav-logo-marca {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5em;
+  font-weight: 500;
   display: block;
 }
 .nav-logo-slogan {
@@ -243,6 +244,7 @@ p {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5em;
   display: block;
+  font-weight: 500;
 }
 .footer-logo-slogan {
   font-family: "Montserrat Alternates", sans-serif;
@@ -364,6 +366,9 @@ p {
 .artista-hero .artista-datos-contacto li {
   padding: 0.5em;
 }
+.artista-hero .artista-datos-contacto li:hover {
+  text-shadow: 1px 2px 5px #a4bfb8;
+}
 
 /* Fin Artista Hero */
 .artista-descripcion p {
@@ -450,6 +455,7 @@ p {
   padding: 1em;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
+  transition: all 0.5s ease;
 }
 .acceso-artista-img {
   width: 100%;
@@ -485,6 +491,9 @@ p {
 }
 .contacto-redes .bi {
   color: #a4bfb8;
+}
+.contacto-redes li:hover {
+  text-shadow: 1px 2px 5px #a4bfb8;
 }
 .contacto-form {
   display: flex;
@@ -534,7 +543,6 @@ p {
 @media (min-width: 768px) {
   .nav {
     grid-template-columns: 3fr 1fr 3fr;
-    /* Flexbox */
   }
   .nav-carpincho {
     display: block;
@@ -572,22 +580,26 @@ p {
     background-color: transparent;
   }
   .nav .nav-artistas {
-    display: none;
-    font-size: 1rem;
-    padding: 8px;
+    display: flex;
     flex-direction: column;
-    position: absolute;
     gap: 8px;
+    font-size: 1em;
+    padding: 8px;
+    position: absolute;
+    top: 40px;
     background-color: #f2a099;
     border: 1px solid #f2c2c2;
-    border-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     width: max-content;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.5s ease-in-out;
   }
   .nav .nav-artistas-item {
     padding: 4px;
   }
   .nav-menu-artistas:hover .nav-artistas {
-    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   .active {
     background-color: #f2c2c2;

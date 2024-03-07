@@ -34,6 +34,10 @@
         .bi {
             color: $secondary-color;
         }
+
+        li:hover {
+            @include text-shadow($secondary-color);
+        }
     }
 
     // **************
