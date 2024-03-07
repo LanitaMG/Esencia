@@ -18,7 +18,6 @@
     float: left;
     margin-left: 1em;
 
-
     &-marca {
       font-family: $title-font;
       font-size: 1.5em;
@@ -44,45 +43,94 @@
   &-menu-box {
     @include flexible(row, wrap, null, end, 2em);
     width: 100%;
-
   }
 
   &-menu-icon {
-    font-size: 2.5em;
     cursor: pointer;
+    width: 3em;
+    height: 1.5em;
+    position: relative;
+
+    span {
+      border-radius: 5px;
+      background-color: $black;
+      display: block;
+      width: 60%;
+      position: absolute;
+      // margin: 8px auto;
+      height: 3px;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      z-index: 1;
+    }
+
+    .linea-1 {
+      top: 0px;
+    }
+
+    .linea-2 {
+      top: 11px;
+    }
+
+    .linea-3 {
+      bottom: 0;
+    }
   }
 
   &-menu-show {
     display: none;
+    
   }
 
-  &-menu-show:checked~.nav-menu-icon{
-    transform: rotate(90deg);
-
+  // Desplegar menú
+  &-menu-show:checked ~ .nav-menu-icon .linea-1 {
+    animation-name: linea1-animacion;
   }
 
-  &-menu-show:checked~.nav-menu {
-    display: flex;
+  &-menu-show:checked ~ .nav-menu-icon > .linea-2 {
+    animation-name: linea2-animacion;
   }
+
+  &-menu-show:checked ~ .nav-menu-icon > .linea-3 {
+    animation-name: linea3-animacion;
+  }
+
+  &-menu-show:checked ~ .nav-menu {
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  // Cerrar Menu
+  &-menu-show:not(:checked) ~ .nav-menu-icon .linea-1 {
+    animation-name: linea1-animacion-close;
+  }
+
+  &-menu-show:not(:checked) ~ .nav-menu-icon > .linea-2 {
+    animation-name: linea2-animacion-close;
+  }
+
+  &-menu-show:not(:checked) ~ .nav-menu-icon > .linea-3 {
+    animation-name: linea3-animacion-close;
+  }
+
 
   &-menu {
     border: $grey-light 1px solid;
     border-radius: 10px;
     background-color: $primary-color-light;
     padding: 1em;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 1em;
     position: absolute;
-    top: 3.5em;
-    right: 0.5em;
-    z-index: 100;
+    top: 1em;
+    right: 2em;
     width: 200px;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 0.5s ease-in;
 
     .nav-artistas-item {
       font-size: 0.9em;
       padding: 0.5em;
-
     }
   }
 
@@ -94,6 +142,65 @@
     text-decoration-color: $primary-color;
   }
 }
+
+// Animaciones Burger
+
+@keyframes linea1-animacion {
+  50%,
+  100% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+}
+
+@keyframes linea2-animacion {
+  20%,
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+@keyframes linea3-animacion {
+  50%,
+  100% {
+    transform: translateY(-11px) rotate(45deg);
+  }
+}
+
+@keyframes linea1-animacion-close {
+  0%,
+  50% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  50%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes linea2-animacion-close {
+  0%, 50% {
+    opacity: 0;
+      width: 0%;
+  }
+  50%,
+  100% {
+    opacity: 1;
+    width: 60%;
+  }
+}
+
+@keyframes linea3-animacion-close {
+  0%,
+  50% {
+    transform: translateY(-11px) rotate(45deg);
+  }
+  50%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
 
 
 /* fin Header-Menu */
@@ -117,9 +224,12 @@
   // *****************
 
   &-logo {
-    background: linear-gradient(to bottom right, $primary-color-light, $primary-color);
+    background: linear-gradient(
+      to bottom right,
+      $primary-color-light,
+      $primary-color
+    );
     padding: 1em;
-
 
     &-marca {
       font-family: $title-font;
@@ -133,12 +243,11 @@
 
     /* Fin Footer - Logo */
 
-    >p {
+    > p {
       font-size: 0.8em;
       padding-top: 0.5em;
     }
   }
-
 }
 
 /* Fin Footer */

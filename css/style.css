@@ -111,31 +111,69 @@ p {
   width: 100%;
 }
 .nav-menu-icon {
-  font-size: 2.5em;
   cursor: pointer;
+  width: 3em;
+  height: 1.5em;
+  position: relative;
+}
+.nav-menu-icon span {
+  border-radius: 5px;
+  background-color: #1d1d1d;
+  display: block;
+  width: 60%;
+  position: absolute;
+  height: 3px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+.nav-menu-icon .linea-1 {
+  top: 0px;
+}
+.nav-menu-icon .linea-2 {
+  top: 11px;
+}
+.nav-menu-icon .linea-3 {
+  bottom: 0;
 }
 .nav-menu-show {
   display: none;
 }
-.nav-menu-show:checked ~ .nav-menu-icon {
-  transform: rotate(90deg);
+.nav-menu-show:checked ~ .nav-menu-icon .linea-1 {
+  animation-name: linea1-animacion;
+}
+.nav-menu-show:checked ~ .nav-menu-icon > .linea-2 {
+  animation-name: linea2-animacion;
+}
+.nav-menu-show:checked ~ .nav-menu-icon > .linea-3 {
+  animation-name: linea3-animacion;
 }
 .nav-menu-show:checked ~ .nav-menu {
-  display: flex;
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.nav-menu-show:not(:checked) ~ .nav-menu-icon .linea-1 {
+  animation-name: linea1-animacion-close;
+}
+.nav-menu-show:not(:checked) ~ .nav-menu-icon > .linea-2 {
+  animation-name: linea2-animacion-close;
+}
+.nav-menu-show:not(:checked) ~ .nav-menu-icon > .linea-3 {
+  animation-name: linea3-animacion-close;
 }
 .nav-menu {
   border: #fcfcfc 1px solid;
   border-radius: 10px;
   background-color: #f2c2c2;
   padding: 1em;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 1em;
   position: absolute;
-  top: 3.5em;
-  right: 0.5em;
-  z-index: 100;
+  top: 1em;
+  right: 2em;
   width: 200px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transition: clip-path 0.5s ease-in;
 }
 .nav-menu .nav-artistas-item {
   font-size: 0.9em;
@@ -149,6 +187,48 @@ p {
   text-decoration-color: #f2a099;
 }
 
+@keyframes linea1-animacion {
+  50%, 100% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+}
+@keyframes linea2-animacion {
+  20%, 100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+@keyframes linea3-animacion {
+  50%, 100% {
+    transform: translateY(-11px) rotate(45deg);
+  }
+}
+@keyframes linea1-animacion-close {
+  0%, 50% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  50%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes linea2-animacion-close {
+  0%, 50% {
+    opacity: 0;
+    width: 0%;
+  }
+  50%, 100% {
+    opacity: 1;
+    width: 60%;
+  }
+}
+@keyframes linea3-animacion-close {
+  0%, 50% {
+    transform: translateY(-11px) rotate(45deg);
+  }
+  50%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
 /* fin Header-Menu */
 .footer {
   text-align: center;
@@ -462,6 +542,9 @@ p {
   .nav-menu-icon {
     display: none;
   }
+  .nav .nav-menu-show:not(:checked) ~ .nav-menu {
+    clip-path: none;
+  }
   .nav-menu {
     border: none;
     border-radius: 0;
@@ -477,6 +560,7 @@ p {
     align-self: start;
     margin-right: 1em;
     font-weight: 500;
+    width: auto;
   }
   .nav-menu-item {
     padding: 8px;
@@ -500,6 +584,9 @@ p {
   .nav .nav-artistas-item {
     padding: 4px;
   }
+  .nav-menu-artistas:hover .nav-artistas {
+    display: flex;
+  }
   .active {
     background-color: #f2c2c2;
     border-top-left-radius: 50%;
@@ -519,9 +606,6 @@ p {
     margin-inline: auto;
     border-bottom: 3px solid #f2c2c2;
     width: 100%;
-  }
-  .nav-menu-artistas:hover .nav-artistas {
-    display: flex;
   }
   /* Fin Nav - Menú */
   /* Fin Header*/

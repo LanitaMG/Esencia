@@ -25,9 +25,15 @@
     // **************
 
     &-menu-icon {
-      display: none;
+      display: none; 
     }
 
+    .nav-menu-show:not(:checked)~.nav-menu {
+      clip-path: none;
+    }
+    
+
+    
     &-menu {
       border: none;
       border-radius: 0;
@@ -40,17 +46,18 @@
       align-self: start;
       margin-right: 1em;
       font-weight: 500;
-
+      width: auto;
+      
       &-item {
         padding: 8px;
         margin-inline: auto;
-
+        
         a {
           background-color: transparent;
         }
       }
     }
-
+    
     .nav-artistas {
       display: none;
       font-size: 1rem;
@@ -62,27 +69,30 @@
       border: 1px solid $primary-color-light;
       border-radius: 10%;
       width:max-content;
-    //   top: 2.5em;
-
-
+      
+      
       &-item {
         padding: 4px;
       }
     }
   }
-
+  
+  .nav-menu-artistas:hover .nav-artistas {
+    display: flex;
+  }
+  
   .active {
     background-color: $primary-color-light;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
   }
-
+  
   .nav-menu-item,
   .nav-artistas-item {
     position: relative;
   }
-
-
+  
+  
   .nav-menu-item:not(.active):hover::before,
   .nav-artistas-item:not(.active):hover::before {
     content: "";
@@ -94,10 +104,8 @@
     border-bottom: 3px solid $primary-color-light;
     width: 100%;
   }
-
-  .nav-menu-artistas:hover .nav-artistas {
-    display: flex;
-  }
+  
+  
 
   /* Fin Nav - Menú */
   /* Fin Header*/
