@@ -31,8 +31,9 @@
     &-redes {
         @include flexible (column, null, null, space-around, 0.5em);
 
-        .bi {
-            color: $secondary-color;
+        .icon {
+            width: 1em;
+            fill: $secondary-color;
         }
 
         li:hover {

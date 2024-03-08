@@ -37,6 +37,11 @@
 
             &-contacto {
                 padding-top: 1em;
+
+                .icon {
+                    width: 1.2em;
+                    fill: $secondary-color;
+                }
                 span {
                     color: $secondary-color;
                     font-size: 1.2em;

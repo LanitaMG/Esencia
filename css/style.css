@@ -359,6 +359,10 @@ p {
 .artista-hero .artista-datos-contacto {
   padding-top: 1em;
 }
+.artista-hero .artista-datos-contacto .icon {
+  width: 1.2em;
+  fill: #a4bfb8;
+}
 .artista-hero .artista-datos-contacto span {
   color: #a4bfb8;
   font-size: 1.2em;
@@ -489,8 +493,9 @@ p {
   justify-content: space-around;
   gap: 0.5em;
 }
-.contacto-redes .bi {
-  color: #a4bfb8;
+.contacto-redes .icon {
+  width: 1em;
+  fill: #a4bfb8;
 }
 .contacto-redes li:hover {
   text-shadow: 1px 2px 5px #a4bfb8;
